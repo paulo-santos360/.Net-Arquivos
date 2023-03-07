@@ -1,0 +1,11 @@
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\bin\Debug\Projeto.splash.exe.config
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\bin\Debug\Projeto.splash.exe
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\bin\Debug\Projeto.splash.pdb
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.csproj.AssemblyReference.cache
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.Form1.resources
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.Properties.Resources.resources
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.csproj.GenerateResource.cache
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.csproj.CoreCompileInputs.cache
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.exe
+C:\Users\paulo.asantos16\source\repos\Projeto.splash\Projeto.splash\obj\Debug\Projeto.splash.pdb
