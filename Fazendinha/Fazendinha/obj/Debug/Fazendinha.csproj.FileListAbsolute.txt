@@ -1,0 +1,12 @@
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\bin\Debug\Fazendinha.exe.config
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\bin\Debug\Fazendinha.exe
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\bin\Debug\Fazendinha.pdb
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.csproj.AssemblyReference.cache
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.Form1.resources
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.Form2.resources
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.Properties.Resources.resources
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.csproj.GenerateResource.cache
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.csproj.CoreCompileInputs.cache
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.exe
+C:\Users\paulo.asantos16\source\repos\Fazendinha\Fazendinha\obj\Debug\Fazendinha.pdb

@@ -1,0 +1,11 @@
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\bin\Debug\Classe Cliente.exe.config
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\bin\Debug\Classe Cliente.exe
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\bin\Debug\Classe Cliente.pdb
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.csproj.AssemblyReference.cache
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe_Cliente.Properties.Resources.resources
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.csproj.GenerateResource.cache
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.csproj.CoreCompileInputs.cache
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.exe
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe Cliente.pdb
+C:\Users\paulo.asantos16\source\repos\Classe Cliente\Classe Cliente\obj\Debug\Classe_Cliente.Form1.resources

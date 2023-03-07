@@ -1,0 +1,13 @@
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\bin\Debug\WindowsFormsApp1 Cadastro de Cliente.exe.config
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\bin\Debug\WindowsFormsApp1 Cadastro de Cliente.exe
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\bin\Debug\WindowsFormsApp1 Cadastro de Cliente.pdb
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.csproj.AssemblyReference.cache
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1_Cadastro_de_Cliente.Form1.resources
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1_Cadastro_de_Cliente.Form2.resources
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1_Cadastro_de_Cliente.Form3.resources
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1_Cadastro_de_Cliente.Properties.Resources.resources
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.csproj.GenerateResource.cache
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.csproj.CoreCompileInputs.cache
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.exe
+C:\Users\paulo.asantos16\source\repos\WindowsFormsApp1 Cadastro de Cliente\WindowsFormsApp1 Cadastro de Cliente\obj\Debug\WindowsFormsApp1 Cadastro de Cliente.pdb
