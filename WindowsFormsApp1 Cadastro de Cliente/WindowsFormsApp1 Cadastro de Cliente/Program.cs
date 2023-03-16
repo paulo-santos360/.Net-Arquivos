@@ -16,7 +16,7 @@ namespace WindowsFormsApp1_Cadastro_de_Cliente
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Frm());
         }
     }
 }

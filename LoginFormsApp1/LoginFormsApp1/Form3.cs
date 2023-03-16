@@ -26,6 +26,7 @@ namespace LoginFormsApp1
         {
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.pessoa'. Você pode movê-la ou removê-la conforme necessário.
             this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+            pessoaBindingSource.AddNew();
             foreach (Control controle in this.Controls)
             {
                 if (controle is TextBox)
@@ -38,7 +39,22 @@ namespace LoginFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            {
+                this.Validate();
+                pessoaBindingSource.EndEdit();
+                pessoaTableAdapter.Update(colabDataSet.pessoa);
+                this.pessoaTableAdapter.Fill(this.colabDataSet.pessoa);
+                pessoaBindingSource.MoveLast();
 
+                //aparece a mensagem quando der certo
+                MessageBox.Show("Mesa cadastrada com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                //chamar um novo registro
+                pessoaBindingSource.AddNew();
+
+                textBox2.Focus();
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
