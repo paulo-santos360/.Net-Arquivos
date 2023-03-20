@@ -19,6 +19,8 @@ namespace Projeto_Ração
 
         private void FrmCadFornecedor_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'racaodovaleDataSet.cadast_fornecedor'. Você pode movê-la ou removê-la conforme necessário.
+            this.cadast_fornecedorTableAdapter.Fill(this.racaodovaleDataSet.cadast_fornecedor);
 
         }
     }

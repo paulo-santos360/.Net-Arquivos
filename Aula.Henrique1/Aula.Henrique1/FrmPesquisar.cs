@@ -51,5 +51,33 @@ namespace Aula.Henrique1
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            Alterar newAlterar = new Alterar();
+            newAlterar.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            colaborador colab = new colaborador();
+            this.Hide();
+            colab.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            foreach (Control controle in this.Controls)
+            {
+                if (controle is TextBox)
+                {
+                    TextBox textBox = (TextBox)controle;
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
     }
 }

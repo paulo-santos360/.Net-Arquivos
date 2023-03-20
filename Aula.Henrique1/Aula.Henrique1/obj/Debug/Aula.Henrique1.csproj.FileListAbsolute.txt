@@ -16,3 +16,4 @@ C:\Users\paulo.asantos16\source\repos\Aula.Henrique1\Aula.Henrique1\obj\Debug\Au
 C:\Users\paulo.asantos16\source\repos\Aula.Henrique1\Aula.Henrique1\obj\Debug\Aula.Henrique1.exe
 C:\Users\paulo.asantos16\source\repos\Aula.Henrique1\Aula.Henrique1\obj\Debug\Aula.Henrique1.pdb
 C:\Users\paulo.asantos16\source\repos\Aula.Henrique1\Aula.Henrique1\obj\Debug\Aula.Henrique1.FrmPesquisar.resources
+C:\Users\paulo.asantos16\source\repos\Aula.Henrique1\Aula.Henrique1\obj\Debug\Aula.Henrique1.Alterar.resources

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadProdutos.Designer.cs">
+      <DependentUpon>CadProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="CONTROLE.CAIXA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadProdutos.resx">
+      <DependentUpon>CadProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CONTAS.resx">
       <DependentUpon>CONTAS.cs</DependentUpon>
     </EmbeddedResource>

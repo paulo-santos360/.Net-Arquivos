@@ -298,6 +298,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "ALTERAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -307,6 +308,7 @@
             this.button3.TabIndex = 26;
             this.button3.Text = "PESQUISAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 

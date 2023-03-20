@@ -40,11 +40,11 @@ namespace Projeto_Ração {
         
         private promocao_produtoDataTable tablepromocao_produto;
         
-        private global::System.Data.DataRelation relationFK__controle___cad_C__49C3F6B7;
+        private global::System.Data.DataRelation relationFK__controle___cad_C__5CD6CB2B;
         
-        private global::System.Data.DataRelation relationFK__controle___cadas__4BAC3F29;
+        private global::System.Data.DataRelation relationFK__controle___cadas__5EBF139D;
         
-        private global::System.Data.DataRelation relationFK__controle___produ__4AB81AF0;
+        private global::System.Data.DataRelation relationFK__controle___produ__5DCAEF64;
         
         private global::System.Data.DataRelation relationFK__controle___cad_C__403A8C7D;
         
@@ -374,9 +374,9 @@ namespace Projeto_Ração {
                     this.tablepromocao_produto.InitVars();
                 }
             }
-            this.relationFK__controle___cad_C__49C3F6B7 = this.Relations["FK__controle___cad_C__49C3F6B7"];
-            this.relationFK__controle___cadas__4BAC3F29 = this.Relations["FK__controle___cadas__4BAC3F29"];
-            this.relationFK__controle___produ__4AB81AF0 = this.Relations["FK__controle___produ__4AB81AF0"];
+            this.relationFK__controle___cad_C__5CD6CB2B = this.Relations["FK__controle___cad_C__5CD6CB2B"];
+            this.relationFK__controle___cadas__5EBF139D = this.Relations["FK__controle___cadas__5EBF139D"];
+            this.relationFK__controle___produ__5DCAEF64 = this.Relations["FK__controle___produ__5DCAEF64"];
             this.relationFK__controle___cad_C__403A8C7D = this.Relations["FK__controle___cad_C__403A8C7D"];
             this.relationFK__controle___produ__412EB0B6 = this.Relations["FK__controle___produ__412EB0B6"];
             this.relationFK__promocao___produ__46E78A0C = this.Relations["FK__promocao___produ__46E78A0C"];
@@ -406,18 +406,18 @@ namespace Projeto_Ração {
             base.Tables.Add(this.tablecontrole_estoque);
             this.tablepromocao_produto = new promocao_produtoDataTable();
             base.Tables.Add(this.tablepromocao_produto);
-            this.relationFK__controle___cad_C__49C3F6B7 = new global::System.Data.DataRelation("FK__controle___cad_C__49C3F6B7", new global::System.Data.DataColumn[] {
+            this.relationFK__controle___cad_C__5CD6CB2B = new global::System.Data.DataRelation("FK__controle___cad_C__5CD6CB2B", new global::System.Data.DataColumn[] {
                         this.tablecad_funcionario.cad_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_caixa.cad_CDColumn}, false);
-            this.Relations.Add(this.relationFK__controle___cad_C__49C3F6B7);
-            this.relationFK__controle___cadas__4BAC3F29 = new global::System.Data.DataRelation("FK__controle___cadas__4BAC3F29", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__controle___cad_C__5CD6CB2B);
+            this.relationFK__controle___cadas__5EBF139D = new global::System.Data.DataRelation("FK__controle___cadas__5EBF139D", new global::System.Data.DataColumn[] {
                         this.tablecadastro_cliente.cadastro_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_caixa.cadastro_CDColumn}, false);
-            this.Relations.Add(this.relationFK__controle___cadas__4BAC3F29);
-            this.relationFK__controle___produ__4AB81AF0 = new global::System.Data.DataRelation("FK__controle___produ__4AB81AF0", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__controle___cadas__5EBF139D);
+            this.relationFK__controle___produ__5DCAEF64 = new global::System.Data.DataRelation("FK__controle___produ__5DCAEF64", new global::System.Data.DataColumn[] {
                         this.tablecadastro_produtos.produtos_cdColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_caixa.produtos_cdColumn}, false);
-            this.Relations.Add(this.relationFK__controle___produ__4AB81AF0);
+            this.Relations.Add(this.relationFK__controle___produ__5DCAEF64);
             this.relationFK__controle___cad_C__403A8C7D = new global::System.Data.DataRelation("FK__controle___cad_C__403A8C7D", new global::System.Data.DataColumn[] {
                         this.tablecad_funcionario.cad_CDColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_estoque.cad_CDColumn}, false);
@@ -2342,6 +2342,10 @@ namespace Projeto_Ração {
             
             private global::System.Data.DataColumn columncontrole_cd;
             
+            private global::System.Data.DataColumn columncontrole_abertura_caixa;
+            
+            private global::System.Data.DataColumn columncontrole_fechamento_caixa;
+            
             private global::System.Data.DataColumn columncontrole_cd_barra;
             
             private global::System.Data.DataColumn columncontrole_desc;
@@ -2394,6 +2398,22 @@ namespace Projeto_Ração {
             public global::System.Data.DataColumn controle_cdColumn {
                 get {
                     return this.columncontrole_cd;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn controle_abertura_caixaColumn {
+                get {
+                    return this.columncontrole_abertura_caixa;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn controle_fechamento_caixaColumn {
+                get {
+                    return this.columncontrole_fechamento_caixa;
                 }
             }
             
@@ -2490,10 +2510,12 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public controle_caixaRow Addcontrole_caixaRow(string controle_cd_barra, string controle_desc, string controle_QT, string controle_VALOR_PRO, cad_funcionarioRow parentcad_funcionarioRowByFK__controle___cad_C__49C3F6B7, cadastro_produtosRow parentcadastro_produtosRowByFK__controle___produ__4AB81AF0, cadastro_clienteRow parentcadastro_clienteRowByFK__controle___cadas__4BAC3F29) {
+            public controle_caixaRow Addcontrole_caixaRow(string controle_abertura_caixa, string controle_fechamento_caixa, string controle_cd_barra, string controle_desc, string controle_QT, string controle_VALOR_PRO, cad_funcionarioRow parentcad_funcionarioRowByFK__controle___cad_C__5CD6CB2B, cadastro_produtosRow parentcadastro_produtosRowByFK__controle___produ__5DCAEF64, cadastro_clienteRow parentcadastro_clienteRowByFK__controle___cadas__5EBF139D) {
                 controle_caixaRow rowcontrole_caixaRow = ((controle_caixaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
+                        controle_abertura_caixa,
+                        controle_fechamento_caixa,
                         controle_cd_barra,
                         controle_desc,
                         controle_QT,
@@ -2501,14 +2523,14 @@ namespace Projeto_Ração {
                         null,
                         null,
                         null};
-                if ((parentcad_funcionarioRowByFK__controle___cad_C__49C3F6B7 != null)) {
-                    columnValuesArray[5] = parentcad_funcionarioRowByFK__controle___cad_C__49C3F6B7[0];
+                if ((parentcad_funcionarioRowByFK__controle___cad_C__5CD6CB2B != null)) {
+                    columnValuesArray[7] = parentcad_funcionarioRowByFK__controle___cad_C__5CD6CB2B[0];
                 }
-                if ((parentcadastro_produtosRowByFK__controle___produ__4AB81AF0 != null)) {
-                    columnValuesArray[6] = parentcadastro_produtosRowByFK__controle___produ__4AB81AF0[0];
+                if ((parentcadastro_produtosRowByFK__controle___produ__5DCAEF64 != null)) {
+                    columnValuesArray[8] = parentcadastro_produtosRowByFK__controle___produ__5DCAEF64[0];
                 }
-                if ((parentcadastro_clienteRowByFK__controle___cadas__4BAC3F29 != null)) {
-                    columnValuesArray[7] = parentcadastro_clienteRowByFK__controle___cadas__4BAC3F29[0];
+                if ((parentcadastro_clienteRowByFK__controle___cadas__5EBF139D != null)) {
+                    columnValuesArray[9] = parentcadastro_clienteRowByFK__controle___cadas__5EBF139D[0];
                 }
                 rowcontrole_caixaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcontrole_caixaRow);
@@ -2540,6 +2562,8 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columncontrole_cd = base.Columns["controle_cd"];
+                this.columncontrole_abertura_caixa = base.Columns["controle_abertura_caixa"];
+                this.columncontrole_fechamento_caixa = base.Columns["controle_fechamento_caixa"];
                 this.columncontrole_cd_barra = base.Columns["controle_cd_barra"];
                 this.columncontrole_desc = base.Columns["controle_desc"];
                 this.columncontrole_QT = base.Columns["controle_QT"];
@@ -2554,6 +2578,10 @@ namespace Projeto_Ração {
             private void InitClass() {
                 this.columncontrole_cd = new global::System.Data.DataColumn("controle_cd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncontrole_cd);
+                this.columncontrole_abertura_caixa = new global::System.Data.DataColumn("controle_abertura_caixa", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontrole_abertura_caixa);
+                this.columncontrole_fechamento_caixa = new global::System.Data.DataColumn("controle_fechamento_caixa", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontrole_fechamento_caixa);
                 this.columncontrole_cd_barra = new global::System.Data.DataColumn("controle_cd_barra", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncontrole_cd_barra);
                 this.columncontrole_desc = new global::System.Data.DataColumn("controle_desc", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2576,6 +2604,10 @@ namespace Projeto_Ração {
                 this.columncontrole_cd.AllowDBNull = false;
                 this.columncontrole_cd.ReadOnly = true;
                 this.columncontrole_cd.Unique = true;
+                this.columncontrole_abertura_caixa.AllowDBNull = false;
+                this.columncontrole_abertura_caixa.MaxLength = 40;
+                this.columncontrole_fechamento_caixa.AllowDBNull = false;
+                this.columncontrole_fechamento_caixa.MaxLength = 40;
                 this.columncontrole_cd_barra.AllowDBNull = false;
                 this.columncontrole_cd_barra.MaxLength = 40;
                 this.columncontrole_desc.AllowDBNull = false;
@@ -3588,11 +3620,11 @@ namespace Projeto_Ração {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public controle_caixaRow[] Getcontrole_caixaRows() {
-                if ((this.Table.ChildRelations["FK__controle___cad_C__49C3F6B7"] == null)) {
+                if ((this.Table.ChildRelations["FK__controle___cad_C__5CD6CB2B"] == null)) {
                     return new controle_caixaRow[0];
                 }
                 else {
-                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cad_C__49C3F6B7"])));
+                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cad_C__5CD6CB2B"])));
                 }
             }
             
@@ -3794,11 +3826,11 @@ namespace Projeto_Ração {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public controle_caixaRow[] Getcontrole_caixaRows() {
-                if ((this.Table.ChildRelations["FK__controle___cadas__4BAC3F29"] == null)) {
+                if ((this.Table.ChildRelations["FK__controle___cadas__5EBF139D"] == null)) {
                     return new controle_caixaRow[0];
                 }
                 else {
-                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cadas__4BAC3F29"])));
+                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cadas__5EBF139D"])));
                 }
             }
         }
@@ -3886,11 +3918,11 @@ namespace Projeto_Ração {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public controle_caixaRow[] Getcontrole_caixaRows() {
-                if ((this.Table.ChildRelations["FK__controle___produ__4AB81AF0"] == null)) {
+                if ((this.Table.ChildRelations["FK__controle___produ__5DCAEF64"] == null)) {
                     return new controle_caixaRow[0];
                 }
                 else {
-                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___produ__4AB81AF0"])));
+                    return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___produ__5DCAEF64"])));
                 }
             }
             
@@ -4003,6 +4035,28 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string controle_abertura_caixa {
+                get {
+                    return ((string)(this[this.tablecontrole_caixa.controle_abertura_caixaColumn]));
+                }
+                set {
+                    this[this.tablecontrole_caixa.controle_abertura_caixaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string controle_fechamento_caixa {
+                get {
+                    return ((string)(this[this.tablecontrole_caixa.controle_fechamento_caixaColumn]));
+                }
+                set {
+                    this[this.tablecontrole_caixa.controle_fechamento_caixaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string controle_cd_barra {
                 get {
                     return ((string)(this[this.tablecontrole_caixa.controle_cd_barraColumn]));
@@ -4097,10 +4151,10 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public cad_funcionarioRow cad_funcionarioRow {
                 get {
-                    return ((cad_funcionarioRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___cad_C__49C3F6B7"])));
+                    return ((cad_funcionarioRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___cad_C__5CD6CB2B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___cad_C__49C3F6B7"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___cad_C__5CD6CB2B"]);
                 }
             }
             
@@ -4108,10 +4162,10 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public cadastro_clienteRow cadastro_clienteRow {
                 get {
-                    return ((cadastro_clienteRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___cadas__4BAC3F29"])));
+                    return ((cadastro_clienteRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___cadas__5EBF139D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___cadas__4BAC3F29"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___cadas__5EBF139D"]);
                 }
             }
             
@@ -4119,10 +4173,10 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public cadastro_produtosRow cadastro_produtosRow {
                 get {
-                    return ((cadastro_produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___produ__4AB81AF0"])));
+                    return ((cadastro_produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___produ__5DCAEF64"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___produ__4AB81AF0"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___produ__5DCAEF64"]);
                 }
             }
             
@@ -7173,6 +7227,8 @@ SELECT contas_CD, contas_nm, contas_barra, contas_data_vencimento FROM contas WH
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "controle_caixa";
             tableMapping.ColumnMappings.Add("controle_cd", "controle_cd");
+            tableMapping.ColumnMappings.Add("controle_abertura_caixa", "controle_abertura_caixa");
+            tableMapping.ColumnMappings.Add("controle_fechamento_caixa", "controle_fechamento_caixa");
             tableMapping.ColumnMappings.Add("controle_cd_barra", "controle_cd_barra");
             tableMapping.ColumnMappings.Add("controle_desc", "controle_desc");
             tableMapping.ColumnMappings.Add("controle_QT", "controle_QT");
@@ -7183,9 +7239,11 @@ SELECT contas_CD, contas_nm, contas_barra, contas_data_vencimento FROM contas WH
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[controle_caixa] WHERE (([controle_cd] = @Original_controle_cd) AND ([controle_cd_barra] = @Original_controle_cd_barra) AND ([controle_desc] = @Original_controle_desc) AND ([controle_QT] = @Original_controle_QT) AND ([controle_VALOR_PRO] = @Original_controle_VALOR_PRO) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)) AND ((@IsNull_cadastro_CD = 1 AND [cadastro_CD] IS NULL) OR ([cadastro_CD] = @Original_cadastro_CD)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[controle_caixa] WHERE (([controle_cd] = @Original_controle_cd) AND ([controle_abertura_caixa] = @Original_controle_abertura_caixa) AND ([controle_fechamento_caixa] = @Original_controle_fechamento_caixa) AND ([controle_cd_barra] = @Original_controle_cd_barra) AND ([controle_desc] = @Original_controle_desc) AND ([controle_QT] = @Original_controle_QT) AND ([controle_VALOR_PRO] = @Original_controle_VALOR_PRO) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)) AND ((@IsNull_cadastro_CD = 1 AND [cadastro_CD] IS NULL) OR ([cadastro_CD] = @Original_cadastro_CD)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_abertura_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_abertura_caixa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_fechamento_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_fechamento_caixa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_cd_barra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd_barra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_desc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_QT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_QT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -7198,9 +7256,11 @@ SELECT contas_CD, contas_nm, contas_barra, contas_data_vencimento FROM contas WH
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cadastro_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cadastro_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[controle_caixa] ([controle_cd_barra], [controle_desc], [controle_QT], [controle_VALOR_PRO], [cad_CD], [produtos_cd], [cadastro_CD]) VALUES (@controle_cd_barra, @controle_desc, @controle_QT, @controle_VALOR_PRO, @cad_CD, @produtos_cd, @cadastro_CD);
-SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD FROM controle_caixa WHERE (controle_cd = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[controle_caixa] ([controle_abertura_caixa], [controle_fechamento_caixa], [controle_cd_barra], [controle_desc], [controle_QT], [controle_VALOR_PRO], [cad_CD], [produtos_cd], [cadastro_CD]) VALUES (@controle_abertura_caixa, @controle_fechamento_caixa, @controle_cd_barra, @controle_desc, @controle_QT, @controle_VALOR_PRO, @cad_CD, @produtos_cd, @cadastro_CD);
+SELECT controle_cd, controle_abertura_caixa, controle_fechamento_caixa, controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD FROM controle_caixa WHERE (controle_cd = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_abertura_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_abertura_caixa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_fechamento_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_fechamento_caixa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_cd_barra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd_barra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_desc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_QT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_QT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7210,9 +7270,11 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cadastro_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cadastro_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[controle_caixa] SET [controle_cd_barra] = @controle_cd_barra, [controle_desc] = @controle_desc, [controle_QT] = @controle_QT, [controle_VALOR_PRO] = @controle_VALOR_PRO, [cad_CD] = @cad_CD, [produtos_cd] = @produtos_cd, [cadastro_CD] = @cadastro_CD WHERE (([controle_cd] = @Original_controle_cd) AND ([controle_cd_barra] = @Original_controle_cd_barra) AND ([controle_desc] = @Original_controle_desc) AND ([controle_QT] = @Original_controle_QT) AND ([controle_VALOR_PRO] = @Original_controle_VALOR_PRO) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)) AND ((@IsNull_cadastro_CD = 1 AND [cadastro_CD] IS NULL) OR ([cadastro_CD] = @Original_cadastro_CD)));
-SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD FROM controle_caixa WHERE (controle_cd = @controle_cd)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[controle_caixa] SET [controle_abertura_caixa] = @controle_abertura_caixa, [controle_fechamento_caixa] = @controle_fechamento_caixa, [controle_cd_barra] = @controle_cd_barra, [controle_desc] = @controle_desc, [controle_QT] = @controle_QT, [controle_VALOR_PRO] = @controle_VALOR_PRO, [cad_CD] = @cad_CD, [produtos_cd] = @produtos_cd, [cadastro_CD] = @cadastro_CD WHERE (([controle_cd] = @Original_controle_cd) AND ([controle_abertura_caixa] = @Original_controle_abertura_caixa) AND ([controle_fechamento_caixa] = @Original_controle_fechamento_caixa) AND ([controle_cd_barra] = @Original_controle_cd_barra) AND ([controle_desc] = @Original_controle_desc) AND ([controle_QT] = @Original_controle_QT) AND ([controle_VALOR_PRO] = @Original_controle_VALOR_PRO) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)) AND ((@IsNull_cadastro_CD = 1 AND [cadastro_CD] IS NULL) OR ([cadastro_CD] = @Original_cadastro_CD)));
+SELECT controle_cd, controle_abertura_caixa, controle_fechamento_caixa, controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD FROM controle_caixa WHERE (controle_cd = @controle_cd)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_abertura_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_abertura_caixa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_fechamento_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_fechamento_caixa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_cd_barra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd_barra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_desc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@controle_QT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_QT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7221,6 +7283,8 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cadastro_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cadastro_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_abertura_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_abertura_caixa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_fechamento_caixa", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_fechamento_caixa", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_cd_barra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_cd_barra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_desc", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_desc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_controle_QT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "controle_QT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -7247,8 +7311,9 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALOR" +
-                "_PRO, cad_CD, produtos_cd, cadastro_CD FROM dbo.controle_caixa";
+            this._commandCollection[0].CommandText = "SELECT controle_cd, controle_abertura_caixa, controle_fechamento_caixa, controle_" +
+                "cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, c" +
+                "adastro_CD FROM dbo.controle_caixa";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7309,55 +7374,67 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_controle_cd, string Original_controle_cd_barra, string Original_controle_desc, string Original_controle_QT, string Original_controle_VALOR_PRO, global::System.Nullable<int> Original_cad_CD, global::System.Nullable<int> Original_produtos_cd, global::System.Nullable<int> Original_cadastro_CD) {
+        public virtual int Delete(int Original_controle_cd, string Original_controle_abertura_caixa, string Original_controle_fechamento_caixa, string Original_controle_cd_barra, string Original_controle_desc, string Original_controle_QT, string Original_controle_VALOR_PRO, global::System.Nullable<int> Original_cad_CD, global::System.Nullable<int> Original_produtos_cd, global::System.Nullable<int> Original_cadastro_CD) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_controle_cd));
+            if ((Original_controle_abertura_caixa == null)) {
+                throw new global::System.ArgumentNullException("Original_controle_abertura_caixa");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_controle_abertura_caixa));
+            }
+            if ((Original_controle_fechamento_caixa == null)) {
+                throw new global::System.ArgumentNullException("Original_controle_fechamento_caixa");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_controle_fechamento_caixa));
+            }
             if ((Original_controle_cd_barra == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_cd_barra");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_controle_cd_barra));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_controle_cd_barra));
             }
             if ((Original_controle_desc == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_desc");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_controle_desc));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_controle_desc));
             }
             if ((Original_controle_QT == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_QT");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_controle_QT));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_controle_QT));
             }
             if ((Original_controle_VALOR_PRO == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_VALOR_PRO");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_controle_VALOR_PRO));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_controle_VALOR_PRO));
             }
             if ((Original_cad_CD.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_cad_CD.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            if ((Original_produtos_cd.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_produtos_cd.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_cad_CD.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_cadastro_CD.HasValue == true)) {
+            if ((Original_produtos_cd.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_cadastro_CD.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_produtos_cd.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_cadastro_CD.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_cadastro_CD.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7379,48 +7456,60 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string controle_cd_barra, string controle_desc, string controle_QT, string controle_VALOR_PRO, global::System.Nullable<int> cad_CD, global::System.Nullable<int> produtos_cd, global::System.Nullable<int> cadastro_CD) {
+        public virtual int Insert(string controle_abertura_caixa, string controle_fechamento_caixa, string controle_cd_barra, string controle_desc, string controle_QT, string controle_VALOR_PRO, global::System.Nullable<int> cad_CD, global::System.Nullable<int> produtos_cd, global::System.Nullable<int> cadastro_CD) {
+            if ((controle_abertura_caixa == null)) {
+                throw new global::System.ArgumentNullException("controle_abertura_caixa");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(controle_abertura_caixa));
+            }
+            if ((controle_fechamento_caixa == null)) {
+                throw new global::System.ArgumentNullException("controle_fechamento_caixa");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(controle_fechamento_caixa));
+            }
             if ((controle_cd_barra == null)) {
                 throw new global::System.ArgumentNullException("controle_cd_barra");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(controle_cd_barra));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(controle_cd_barra));
             }
             if ((controle_desc == null)) {
                 throw new global::System.ArgumentNullException("controle_desc");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(controle_desc));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(controle_desc));
             }
             if ((controle_QT == null)) {
                 throw new global::System.ArgumentNullException("controle_QT");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(controle_QT));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(controle_QT));
             }
             if ((controle_VALOR_PRO == null)) {
                 throw new global::System.ArgumentNullException("controle_VALOR_PRO");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(controle_VALOR_PRO));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(controle_VALOR_PRO));
             }
             if ((cad_CD.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(cad_CD.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((produtos_cd.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(produtos_cd.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((cadastro_CD.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(cadastro_CD.Value));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(cad_CD.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((produtos_cd.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(produtos_cd.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((cadastro_CD.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(cadastro_CD.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7443,6 +7532,8 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
+                    string controle_abertura_caixa, 
+                    string controle_fechamento_caixa, 
                     string controle_cd_barra, 
                     string controle_desc, 
                     string controle_QT, 
@@ -7451,6 +7542,8 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
                     global::System.Nullable<int> produtos_cd, 
                     global::System.Nullable<int> cadastro_CD, 
                     int Original_controle_cd, 
+                    string Original_controle_abertura_caixa, 
+                    string Original_controle_fechamento_caixa, 
                     string Original_controle_cd_barra, 
                     string Original_controle_desc, 
                     string Original_controle_QT, 
@@ -7459,98 +7552,122 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
                     global::System.Nullable<int> Original_produtos_cd, 
                     global::System.Nullable<int> Original_cadastro_CD, 
                     int controle_cd) {
+            if ((controle_abertura_caixa == null)) {
+                throw new global::System.ArgumentNullException("controle_abertura_caixa");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(controle_abertura_caixa));
+            }
+            if ((controle_fechamento_caixa == null)) {
+                throw new global::System.ArgumentNullException("controle_fechamento_caixa");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(controle_fechamento_caixa));
+            }
             if ((controle_cd_barra == null)) {
                 throw new global::System.ArgumentNullException("controle_cd_barra");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(controle_cd_barra));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(controle_cd_barra));
             }
             if ((controle_desc == null)) {
                 throw new global::System.ArgumentNullException("controle_desc");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(controle_desc));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(controle_desc));
             }
             if ((controle_QT == null)) {
                 throw new global::System.ArgumentNullException("controle_QT");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(controle_QT));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(controle_QT));
             }
             if ((controle_VALOR_PRO == null)) {
                 throw new global::System.ArgumentNullException("controle_VALOR_PRO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(controle_VALOR_PRO));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(controle_VALOR_PRO));
             }
             if ((cad_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(cad_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((produtos_cd.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(produtos_cd.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((cadastro_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(cadastro_CD.Value));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(cad_CD.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_controle_cd));
+            if ((produtos_cd.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(produtos_cd.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((cadastro_CD.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(cadastro_CD.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_controle_cd));
+            if ((Original_controle_abertura_caixa == null)) {
+                throw new global::System.ArgumentNullException("Original_controle_abertura_caixa");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_controle_abertura_caixa));
+            }
+            if ((Original_controle_fechamento_caixa == null)) {
+                throw new global::System.ArgumentNullException("Original_controle_fechamento_caixa");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_controle_fechamento_caixa));
+            }
             if ((Original_controle_cd_barra == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_cd_barra");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_controle_cd_barra));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_controle_cd_barra));
             }
             if ((Original_controle_desc == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_desc");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_controle_desc));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_controle_desc));
             }
             if ((Original_controle_QT == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_QT");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_controle_QT));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_controle_QT));
             }
             if ((Original_controle_VALOR_PRO == null)) {
                 throw new global::System.ArgumentNullException("Original_controle_VALOR_PRO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_controle_VALOR_PRO));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_controle_VALOR_PRO));
             }
             if ((Original_cad_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_cad_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            if ((Original_produtos_cd.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_produtos_cd.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            if ((Original_cadastro_CD.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_cadastro_CD.Value));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_cad_CD.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(controle_cd));
+            if ((Original_produtos_cd.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_produtos_cd.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((Original_cadastro_CD.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_cadastro_CD.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(controle_cd));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7571,8 +7688,27 @@ SELECT controle_cd, controle_cd_barra, controle_desc, controle_QT, controle_VALO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string controle_cd_barra, string controle_desc, string controle_QT, string controle_VALOR_PRO, global::System.Nullable<int> cad_CD, global::System.Nullable<int> produtos_cd, global::System.Nullable<int> cadastro_CD, int Original_controle_cd, string Original_controle_cd_barra, string Original_controle_desc, string Original_controle_QT, string Original_controle_VALOR_PRO, global::System.Nullable<int> Original_cad_CD, global::System.Nullable<int> Original_produtos_cd, global::System.Nullable<int> Original_cadastro_CD) {
-            return this.Update(controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD, Original_controle_cd, Original_controle_cd_barra, Original_controle_desc, Original_controle_QT, Original_controle_VALOR_PRO, Original_cad_CD, Original_produtos_cd, Original_cadastro_CD, Original_controle_cd);
+        public virtual int Update(
+                    string controle_abertura_caixa, 
+                    string controle_fechamento_caixa, 
+                    string controle_cd_barra, 
+                    string controle_desc, 
+                    string controle_QT, 
+                    string controle_VALOR_PRO, 
+                    global::System.Nullable<int> cad_CD, 
+                    global::System.Nullable<int> produtos_cd, 
+                    global::System.Nullable<int> cadastro_CD, 
+                    int Original_controle_cd, 
+                    string Original_controle_abertura_caixa, 
+                    string Original_controle_fechamento_caixa, 
+                    string Original_controle_cd_barra, 
+                    string Original_controle_desc, 
+                    string Original_controle_QT, 
+                    string Original_controle_VALOR_PRO, 
+                    global::System.Nullable<int> Original_cad_CD, 
+                    global::System.Nullable<int> Original_produtos_cd, 
+                    global::System.Nullable<int> Original_cadastro_CD) {
+            return this.Update(controle_abertura_caixa, controle_fechamento_caixa, controle_cd_barra, controle_desc, controle_QT, controle_VALOR_PRO, cad_CD, produtos_cd, cadastro_CD, Original_controle_cd, Original_controle_abertura_caixa, Original_controle_fechamento_caixa, Original_controle_cd_barra, Original_controle_desc, Original_controle_QT, Original_controle_VALOR_PRO, Original_cad_CD, Original_produtos_cd, Original_cadastro_CD, Original_controle_cd);
         }
     }
     

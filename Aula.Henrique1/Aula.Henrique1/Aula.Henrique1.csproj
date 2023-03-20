@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar.Designer.cs">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="colabDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alterar.resx">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="colaborador.resx">
       <DependentUpon>colaborador.cs</DependentUpon>
     </EmbeddedResource>

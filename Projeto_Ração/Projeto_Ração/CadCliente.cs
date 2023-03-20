@@ -16,5 +16,17 @@ namespace Projeto_Ração
         {
             InitializeComponent();
         }
+
+        private void CadCliente_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'racaodovaleDataSet.cadastro_cliente'. Você pode movê-la ou removê-la conforme necessário.
+            this.cadastro_clienteTableAdapter.Fill(this.racaodovaleDataSet.cadastro_cliente);
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

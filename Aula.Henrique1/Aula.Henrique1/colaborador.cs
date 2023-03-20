@@ -21,6 +21,9 @@ namespace Aula.Henrique1
         {
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
             this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
+            colaboradorBindingSource.AddNew();
+
+
 
         }
 
