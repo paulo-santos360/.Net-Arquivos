@@ -46,23 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadProdutos.cs">
+    <Compile Include="CadCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadProdutos.Designer.cs">
-      <DependentUpon>CadProdutos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CONTROLE.CAIXA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CONTROLE.CAIXA.Designer.cs">
-      <DependentUpon>CONTROLE.CAIXA.cs</DependentUpon>
+    <Compile Include="CadCaixa.Designer.cs">
+      <DependentUpon>CadCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="CONTAS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CONTAS.Designer.cs">
       <DependentUpon>CONTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLE.ESTOQUE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROLE.ESTOQUE.Designer.cs">
+      <DependentUpon>CONTROLE.ESTOQUE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produto.Designer.cs">
+      <DependentUpon>produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROMOCAO.PRODUTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROMOCAO.PRODUTO.Designer.cs">
+      <DependentUpon>PROMOCAO.PRODUTO.cs</DependentUpon>
     </Compile>
     <Compile Include="RacaodovaleDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -107,14 +119,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CadProdutos.resx">
-      <DependentUpon>CadProdutos.cs</DependentUpon>
+    <EmbeddedResource Include="CadCaixa.resx">
+      <DependentUpon>CadCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CONTAS.resx">
       <DependentUpon>CONTAS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLE.CAIXA.resx">
-      <DependentUpon>CONTROLE.CAIXA.cs</DependentUpon>
+    <EmbeddedResource Include="CONTROLE.ESTOQUE.resx">
+      <DependentUpon>CONTROLE.ESTOQUE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
@@ -130,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadFornece.resx">
       <DependentUpon>CadFornece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produto.resx">
+      <DependentUpon>produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROMOCAO.PRODUTO.resx">
+      <DependentUpon>PROMOCAO.PRODUTO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

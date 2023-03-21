@@ -19,12 +19,58 @@ namespace Projeto_Ração
 
         private void cadastroDeFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmCadFornecedor colaba = new FrmCadFornecedor();
+            this.Hide();
+            colaba.ShowDialog();
         }
 
         private void controleDeCaixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CadCaixa colaba = new CadCaixa();
+            this.Hide();
+            colaba.ShowDialog();
+        }
 
+        private void cadastroDeFunciorarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadFunc colaba = new CadFunc();
+            this.Hide();
+            colaba.ShowDialog();
+        }
+
+        private void cToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadCliente colabB = new CadCliente();
+            this.Hide();
+            colabB.ShowDialog();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void contrToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            CONTROLE colabE = new CONTROLE();
+            this.Hide();
+            colabE.ShowDialog();
+        }
+
+        private void promoçãoDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PROMOCAO colabD = new PROMOCAO();
+            this.Hide();
+            colabD.ShowDialog();
+        }
+
+        private void cadProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            produto colabE = new produto();
+            this.Hide();
+            colabE.ShowDialog();
         }
     }
 }

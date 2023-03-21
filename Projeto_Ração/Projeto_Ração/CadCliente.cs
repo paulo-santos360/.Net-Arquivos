@@ -28,5 +28,12 @@ namespace Projeto_Ração
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MENU colab3 = new MENU();
+            this.Hide();
+            colab3.ShowDialog();
+        }
     }
 }

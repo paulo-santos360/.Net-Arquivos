@@ -23,5 +23,12 @@ namespace Projeto_Ração
             this.cadast_fornecedorTableAdapter.Fill(this.racaodovaleDataSet.cadast_fornecedor);
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MENU colab4 = new MENU();
+            this.Hide();
+            colab4.ShowDialog();
+        }
     }
 }

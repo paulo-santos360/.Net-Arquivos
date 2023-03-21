@@ -42,5 +42,10 @@ namespace Aula.Henrique1
             this.Hide();
             colab.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

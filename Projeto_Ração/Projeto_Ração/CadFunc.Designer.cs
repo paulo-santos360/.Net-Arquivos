@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,14 +52,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -67,6 +67,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            // 
+            // cadfuncionarioBindingSource
+            // 
+            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
+            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -241,16 +251,6 @@
             this.button3.Text = "SAIR";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadfuncionarioBindingSource
-            // 
-            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
-            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // cad_funcionarioTableAdapter
             // 
             this.cad_funcionarioTableAdapter.ClearBeforeFill = true;
@@ -272,6 +272,7 @@
             this.button5.TabIndex = 22;
             this.button5.Text = "VOLTAR";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -314,8 +315,8 @@
             this.Name = "CadFunc";
             this.Text = "Cadastro de Funcionario";
             this.Load += new System.EventHandler(this.CadFunc_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

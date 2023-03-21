@@ -28,5 +28,12 @@ namespace Projeto_Ração
             this.cad_funcionarioTableAdapter.Fill(this.racaodovaleDataSet.cad_funcionario);
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MENU colab5 = new MENU();
+            this.Hide();
+            colab5.ShowDialog();
+        }
     }
 }

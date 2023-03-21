@@ -1,6 +1,6 @@
-﻿namespace Aula.Henrique1
+﻿namespace Projeto_Ração
 {
-    partial class juridica
+    partial class PROMOCAO
     {
         /// <summary>
         /// Required designer variable.
@@ -32,145 +32,162 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.juridicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colabDataSet = new Aula.Henrique1.colabDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
+            this.promocaoprodutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.promocao_produtoTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.promocao_produtoTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.juridicaTableAdapter = new Aula.Henrique1.colabDataSetTableAdapters.juridicaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.promocaoprodutoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 52);
+            this.label1.Location = new System.Drawing.Point(154, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(115, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CNPJ";
+            this.label1.Text = "NOME DO PRODUTO";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(267, 52);
+            this.label2.Location = new System.Drawing.Point(458, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(136, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "INS EST";
+            this.label2.Text = "VALIDADE DO PRODUTO";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(458, 52);
+            this.label3.Location = new System.Drawing.Point(154, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(119, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "FUND";
+            this.label3.Text = "DATA DE PROMOCAO";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(458, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "PRODUTOS CD";
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.juridicaBindingSource, "jur_CNPJ", true));
-            this.textBox1.Location = new System.Drawing.Point(87, 102);
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.promocaoprodutoBindingSource, "pro_nm_pro", true));
+            this.textBox1.Location = new System.Drawing.Point(168, 94);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // juridicaBindingSource
-            // 
-            this.juridicaBindingSource.DataMember = "juridica";
-            this.juridicaBindingSource.DataSource = this.colabDataSet;
-            // 
-            // colabDataSet
-            // 
-            this.colabDataSet.DataSetName = "colabDataSet";
-            this.colabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.juridicaBindingSource, "jur_Ins_Est", true));
-            this.textBox2.Location = new System.Drawing.Point(270, 107);
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.promocaoprodutoBindingSource, "pro_dt_validade_pro", true));
+            this.textBox2.Location = new System.Drawing.Point(461, 94);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.juridicaBindingSource, "jur_fund", true));
-            this.textBox3.Location = new System.Drawing.Point(461, 106);
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.promocaoprodutoBindingSource, "pro_dt_promocao", true));
+            this.textBox3.Location = new System.Drawing.Point(174, 192);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.textBox3.TabIndex = 6;
+            // 
+            // textBox4
+            // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.promocaoprodutoBindingSource, "produtos_cd", true));
+            this.textBox4.Location = new System.Drawing.Point(461, 192);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 7;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // promocaoprodutoBindingSource
+            // 
+            this.promocaoprodutoBindingSource.DataMember = "promocao_produto";
+            this.promocaoprodutoBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // promocao_produtoTableAdapter
+            // 
+            this.promocao_produtoTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(83, 220);
+            this.button1.Location = new System.Drawing.Point(83, 281);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
+            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.TabIndex = 8;
             this.button1.Text = "CADASTRAR";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(330, 222);
+            this.button2.Location = new System.Drawing.Point(316, 280);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 9;
             this.button2.Text = "ALTERAR";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(515, 220);
+            this.button3.Location = new System.Drawing.Point(532, 281);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "LIMPAR";
+            this.button3.TabIndex = 10;
+            this.button3.Text = "PESQUISAR";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(81, 320);
+            this.button4.Location = new System.Drawing.Point(83, 356);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 20);
-            this.button4.TabIndex = 9;
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 11;
             this.button4.Text = "APAGAR";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(341, 310);
+            this.button5.Location = new System.Drawing.Point(316, 356);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "LIMPAR";
+            this.button5.TabIndex = 12;
+            this.button5.Text = "VOLTAR";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(527, 312);
+            this.button6.Location = new System.Drawing.Point(532, 356);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "VOLTAR";
+            this.button6.TabIndex = 13;
+            this.button6.Text = "LIMPAR";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // juridicaTableAdapter
-            // 
-            this.juridicaTableAdapter.ClearBeforeFill = true;
-            // 
-            // juridica
+            // PROMOCAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,17 +198,19 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "juridica";
-            this.Text = "juridica";
-            this.Load += new System.EventHandler(this.juridica_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.juridicaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
+            this.Name = "PROMOCAO";
+            this.Text = "PROMOCAO";
+            this.Load += new System.EventHandler(this.PROMOCAO_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.promocaoprodutoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,17 +221,19 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private RacaodovaleDataSet racaodovaleDataSet;
+        private System.Windows.Forms.BindingSource promocaoprodutoBindingSource;
+        private RacaodovaleDataSetTableAdapters.promocao_produtoTableAdapter promocao_produtoTableAdapter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private colabDataSet colabDataSet;
-        private System.Windows.Forms.BindingSource juridicaBindingSource;
-        private colabDataSetTableAdapters.juridicaTableAdapter juridicaTableAdapter;
     }
 }

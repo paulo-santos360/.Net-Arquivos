@@ -3,9 +3,7 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\bin\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\bin\Debug\Projeto_Ração.pdb
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.csproj.AssemblyReference.cache
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.csproj.SuggestedBindingRedirects.cache
-C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.BUTTON1.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CONTAS.resources
-C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.Form1.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.LOGIN.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.MENU.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CadFunc.resources
@@ -16,3 +14,7 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.csproj.CoreCompileInputs.cache
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.exe
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.pdb
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CONTROLE.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.PROMOCAO.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CadCaixa.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.produto.resources

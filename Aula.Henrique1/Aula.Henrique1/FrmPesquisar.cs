@@ -79,5 +79,23 @@ namespace Aula.Henrique1
                 }
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                colaboradorBindingSource.RemoveCurrent();
+                colaboradorTableAdapter.Update(colabDataSet.colaborador); //salvar
+                this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
     }
 }
