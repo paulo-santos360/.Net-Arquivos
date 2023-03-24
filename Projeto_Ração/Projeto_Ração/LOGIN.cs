@@ -50,5 +50,10 @@ namespace Projeto_Ração
             this.cad_funcionarioTableAdapter.Fill(this.racaodovaleDataSet.cad_funcionario);
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

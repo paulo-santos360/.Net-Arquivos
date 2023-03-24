@@ -59,9 +59,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.colabDataSet1 = new Aula.Henrique1.colabDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -298,6 +300,11 @@
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // colabDataSet1
+            // 
+            this.colabDataSet1.DataSetName = "colabDataSet";
+            this.colabDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // FrmPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +328,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colabDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colabDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,5 +366,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private colabDataSet colabDataSet1;
     }
 }

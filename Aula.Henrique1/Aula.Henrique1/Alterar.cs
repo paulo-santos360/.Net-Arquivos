@@ -55,6 +55,10 @@ namespace Aula.Henrique1
         {
             // TODO: esta linha de código carrega dados na tabela 'colabDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
             this.colaboradorTableAdapter.Fill(this.colabDataSet.colaborador);
+            if (Class1.codigo == "")//
+            { colaboradorBindingSource.AddNew(); }//
+            else//
+            { colaboradorBindingSource.Filter = string.Format("col_CD={0}", Class1.codigo); }// textBox1.Text); }
 
         }
 

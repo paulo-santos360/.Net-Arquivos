@@ -52,6 +52,7 @@
     <Compile Include="CadCaixa.Designer.cs">
       <DependentUpon>CadCaixa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="CONTAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +64,90 @@
     </Compile>
     <Compile Include="CONTROLE.ESTOQUE.Designer.cs">
       <DependentUpon>CONTROLE.ESTOQUE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForAltEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForAltEstoque.Designer.cs">
+      <DependentUpon>ForAltEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForAltFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForAltFornecedor.Designer.cs">
+      <DependentUpon>ForAltFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForAltFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForAltFunc.Designer.cs">
+      <DependentUpon>ForAltFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltCaixa.Designer.cs">
+      <DependentUpon>FrmAltCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltClient.Designer.cs">
+      <DependentUpon>FrmAltClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltProduto.Designer.cs">
+      <DependentUpon>FrmAltProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltPromocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltPromocao.Designer.cs">
+      <DependentUpon>FrmAltPromocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesCaixa.Designer.cs">
+      <DependentUpon>FrmPesCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesCliente.Designer.cs">
+      <DependentUpon>FrmPesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesFornecedor.Designer.cs">
+      <DependentUpon>FrmPesFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesFunc.Designer.cs">
+      <DependentUpon>FrmPesFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesProduto.Designer.cs">
+      <DependentUpon>FrmPesProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesPromocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesPromocao.Designer.cs">
+      <DependentUpon>FrmPesPromocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPessEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPessEstoque.Designer.cs">
+      <DependentUpon>FrmPessEstoque.cs</DependentUpon>
     </Compile>
     <Compile Include="produto.cs">
       <SubType>Form</SubType>
@@ -127,6 +212,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CONTROLE.ESTOQUE.resx">
       <DependentUpon>CONTROLE.ESTOQUE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForAltEstoque.resx">
+      <DependentUpon>ForAltEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForAltFornecedor.resx">
+      <DependentUpon>ForAltFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForAltFunc.resx">
+      <DependentUpon>ForAltFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltCaixa.resx">
+      <DependentUpon>FrmAltCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltClient.resx">
+      <DependentUpon>FrmAltClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltProduto.resx">
+      <DependentUpon>FrmAltProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltPromocao.resx">
+      <DependentUpon>FrmAltPromocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesCaixa.resx">
+      <DependentUpon>FrmPesCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesCliente.resx">
+      <DependentUpon>FrmPesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesFornecedor.resx">
+      <DependentUpon>FrmPesFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesFunc.resx">
+      <DependentUpon>FrmPesFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesProduto.resx">
+      <DependentUpon>FrmPesProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesPromocao.resx">
+      <DependentUpon>FrmPesPromocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPessEstoque.resx">
+      <DependentUpon>FrmPessEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

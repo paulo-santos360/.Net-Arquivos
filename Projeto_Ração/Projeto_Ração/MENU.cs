@@ -53,7 +53,6 @@ namespace Projeto_Ração
 
         private void contrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             CONTROLE colabE = new CONTROLE();
             this.Hide();
             colabE.ShowDialog();
