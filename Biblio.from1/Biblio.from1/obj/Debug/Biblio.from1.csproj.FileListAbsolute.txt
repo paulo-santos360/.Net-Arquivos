@@ -1,0 +1,13 @@
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\bin\Debug\Biblio.from1.exe.config
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\bin\Debug\Biblio.from1.exe
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\bin\Debug\Biblio.from1.pdb
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.csproj.AssemblyReference.cache
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.Form1.resources
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.Form2.resources
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.Form3.resources
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.Properties.Resources.resources
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.csproj.GenerateResource.cache
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.csproj.CoreCompileInputs.cache
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.exe
+C:\Users\paulo.asantos16\source\repos\Biblio.from1\Biblio.from1\obj\Debug\Biblio.from1.pdb
