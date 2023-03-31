@@ -45,7 +45,23 @@ namespace Projeto_Ração
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            this.Validate();
+            promocaoprodutoBindingSource.EndEdit();
+            promocao_produtoTableAdapter.Update(racaodovaleDataSet.promocao_produto);
+            this.promocao_produtoTableAdapter.Fill(this.racaodovaleDataSet.promocao_produto);
+            promocaoprodutoBindingSource.MoveLast();
+
+            //chamar um novo registro
+            promocaoprodutoBindingSource.AddNew();
+
+            textBox2.Focus();
+
+            //aparece a mensagem quando der certo
+            MessageBox.Show("cliente cadastrado com sucesso", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            //limpar tela
+            //    textBox1.Text = "";
+            //  textbox.Text = (" ");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

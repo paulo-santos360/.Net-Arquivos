@@ -47,6 +47,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cadastro_clienteTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_clienteTableAdapter();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroclienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
@@ -197,11 +198,23 @@
             // 
             this.cadastro_clienteTableAdapter.ClearBeforeFill = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label7.Location = new System.Drawing.Point(55, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(232, 31);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "RAÇÃODOVALE";
+            // 
             // FrmAltClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
@@ -247,5 +260,6 @@
         private RacaodovaleDataSet racaodovaleDataSet;
         private System.Windows.Forms.BindingSource cadastroclienteBindingSource;
         private RacaodovaleDataSetTableAdapters.cadastro_clienteTableAdapter cadastro_clienteTableAdapter;
+        private System.Windows.Forms.Label label7;
     }
 }

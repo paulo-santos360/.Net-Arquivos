@@ -45,11 +45,10 @@ namespace Projeto_Ração
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.cad_funcionarioTableAdapter.Fill(this.racaodovaleDataSet.cad_funcionario);
-            if (Class1.codigo == "")//
-            { cadfuncionarioBindingSource.AddNew(); }//
-            else//
-            { cadfuncionarioBindingSource.Filter = string.Format("cad_CD={0}", Class1.codigo); }// textBox1.Text); }
+            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.Visible = false;
+            ForAltFunc newAlterar = new ForAltFunc();
+            newAlterar.ShowDialog();
 
         }
 

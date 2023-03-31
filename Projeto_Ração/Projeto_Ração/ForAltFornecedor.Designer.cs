@@ -39,16 +39,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cadastfornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadastfornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cadast_fornecedorTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadast_fornecedorTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -143,6 +143,16 @@
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 23;
             // 
+            // cadastfornecedorBindingSource
+            // 
+            this.cadastfornecedorBindingSource.DataMember = "cadast_fornecedor";
+            this.cadastfornecedorBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox5
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastfornecedorBindingSource, "forn_INSC_EST", true));
@@ -183,16 +193,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 18;
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadastfornecedorBindingSource
-            // 
-            this.cadastfornecedorBindingSource.DataMember = "cadast_fornecedor";
-            this.cadastfornecedorBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // cadast_fornecedorTableAdapter
             // 
             this.cadast_fornecedorTableAdapter.ClearBeforeFill = true;
@@ -201,6 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -220,8 +221,8 @@
             this.Name = "ForAltFornecedor";
             this.Text = "ForAltFornecedor";
             this.Load += new System.EventHandler(this.ForAltFornecedor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

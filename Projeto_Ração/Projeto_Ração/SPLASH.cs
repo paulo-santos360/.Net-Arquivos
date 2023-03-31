@@ -16,5 +16,20 @@ namespace Projeto_Ração
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 100)
+            {
+                progressBar1.Value = progressBar1.Value + 2;
+            }
+            else
+            {
+                timer1.Enabled = false;
+                LOGIN frl = new LOGIN();
+                frl.Show();
+                this.Visible = false;
+            }
+        }
     }
 }

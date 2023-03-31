@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,11 +41,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +66,16 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // cadfuncionarioBindingSource
+            // 
+            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
+            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -137,16 +148,6 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 10;
             // 
-            // cadfuncionarioBindingSource
-            // 
-            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
-            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_SENHA", true));
@@ -168,11 +169,24 @@
             // 
             this.cad_funcionarioTableAdapter.ClearBeforeFill = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label4.Location = new System.Drawing.Point(71, 395);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(232, 31);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "RAÇÃODOVALE";
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -212,5 +226,6 @@
         private RacaodovaleDataSet racaodovaleDataSet;
         private System.Windows.Forms.BindingSource cadfuncionarioBindingSource;
         private RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter cad_funcionarioTableAdapter;
+        private System.Windows.Forms.Label label4;
     }
 }

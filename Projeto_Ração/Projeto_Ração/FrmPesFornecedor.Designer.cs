@@ -40,9 +40,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadastfornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cadast_fornecedorTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadast_fornecedorTableAdapter();
             this.fornCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornRSOCIALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornCNPJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +47,13 @@
             this.fornENDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornFONEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadastfornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
+            this.cadast_fornecedorTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadast_fornecedorTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,25 +161,11 @@
             this.fornFONEDataGridViewTextBoxColumn,
             this.fornEmailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadastfornecedorBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 245);
+            this.dataGridView1.Location = new System.Drawing.Point(57, 204);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(683, 150);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadastfornecedorBindingSource
-            // 
-            this.cadastfornecedorBindingSource.DataMember = "cadast_fornecedor";
-            this.cadastfornecedorBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
-            // cadast_fornecedorTableAdapter
-            // 
-            this.cadast_fornecedorTableAdapter.ClearBeforeFill = true;
             // 
             // fornCDDataGridViewTextBoxColumn
             // 
@@ -223,11 +210,38 @@
             this.fornEmailDataGridViewTextBoxColumn.HeaderText = "forn_Email";
             this.fornEmailDataGridViewTextBoxColumn.Name = "fornEmailDataGridViewTextBoxColumn";
             // 
+            // cadastfornecedorBindingSource
+            // 
+            this.cadastfornecedorBindingSource.DataMember = "cadast_fornecedor";
+            this.cadastfornecedorBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cadast_fornecedorTableAdapter
+            // 
+            this.cadast_fornecedorTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(141, 380);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 31);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "RAÇÃODOVALE";
+            // 
             // FrmPesFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -243,8 +257,8 @@
             this.Text = "FrmPesFornecedor";
             this.Load += new System.EventHandler(this.FrmPesFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +287,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fornENDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fornFONEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fornEmailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

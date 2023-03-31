@@ -40,9 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
             this.cadCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadNMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadCPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,9 +50,13 @@
             this.cadUSUARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadSENHADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadCARGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadfuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
+            this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -170,26 +171,12 @@
             this.cadSENHADataGridViewTextBoxColumn,
             this.cadCARGODataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadfuncionarioBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(58, 236);
+            this.dataGridView1.Location = new System.Drawing.Point(59, 207);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(688, 150);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadfuncionarioBindingSource
-            // 
-            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
-            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
-            // cad_funcionarioTableAdapter
-            // 
-            this.cad_funcionarioTableAdapter.ClearBeforeFill = true;
             // 
             // cadCDDataGridViewTextBoxColumn
             // 
@@ -252,11 +239,38 @@
             this.cadCARGODataGridViewTextBoxColumn.HeaderText = "cad_CARGO";
             this.cadCARGODataGridViewTextBoxColumn.Name = "cadCARGODataGridViewTextBoxColumn";
             // 
+            // cadfuncionarioBindingSource
+            // 
+            this.cadfuncionarioBindingSource.DataMember = "cad_funcionario";
+            this.cadfuncionarioBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cad_funcionarioTableAdapter
+            // 
+            this.cad_funcionarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(71, 388);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 31);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "RAÇÃODOVALE";
+            // 
             // FrmPesFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -272,8 +286,8 @@
             this.Text = "FrmPesFunc";
             this.Load += new System.EventHandler(this.FrmPesFunc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cadUSUARIODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cadSENHADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cadCARGODataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

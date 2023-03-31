@@ -30,19 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controle_estoqueTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter();
             this.controCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controCDPRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controDESCRIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,9 +41,23 @@
             this.controUNIDADEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtoscdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.controle_estoqueTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -76,11 +77,88 @@
             this.cadCDDataGridViewTextBoxColumn,
             this.produtoscdDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.controleestoqueBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 249);
+            this.dataGridView1.Location = new System.Drawing.Point(60, 215);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(688, 150);
             this.dataGridView1.TabIndex = 43;
+            // 
+            // controCDDataGridViewTextBoxColumn
+            // 
+            this.controCDDataGridViewTextBoxColumn.DataPropertyName = "contro_CD";
+            this.controCDDataGridViewTextBoxColumn.HeaderText = "contro_CD";
+            this.controCDDataGridViewTextBoxColumn.Name = "controCDDataGridViewTextBoxColumn";
+            this.controCDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // controCDPRODataGridViewTextBoxColumn
+            // 
+            this.controCDPRODataGridViewTextBoxColumn.DataPropertyName = "contro_CD_PRO";
+            this.controCDPRODataGridViewTextBoxColumn.HeaderText = "contro_CD_PRO";
+            this.controCDPRODataGridViewTextBoxColumn.Name = "controCDPRODataGridViewTextBoxColumn";
+            // 
+            // controDESCRIDataGridViewTextBoxColumn
+            // 
+            this.controDESCRIDataGridViewTextBoxColumn.DataPropertyName = "contro_DESCRI";
+            this.controDESCRIDataGridViewTextBoxColumn.HeaderText = "contro_DESCRI";
+            this.controDESCRIDataGridViewTextBoxColumn.Name = "controDESCRIDataGridViewTextBoxColumn";
+            // 
+            // controDATADataGridViewTextBoxColumn
+            // 
+            this.controDATADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA";
+            this.controDATADataGridViewTextBoxColumn.HeaderText = "contro_DATA";
+            this.controDATADataGridViewTextBoxColumn.Name = "controDATADataGridViewTextBoxColumn";
+            // 
+            // controDATAENTDataGridViewTextBoxColumn
+            // 
+            this.controDATAENTDataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_ENT";
+            this.controDATAENTDataGridViewTextBoxColumn.HeaderText = "contro_DATA_ENT";
+            this.controDATAENTDataGridViewTextBoxColumn.Name = "controDATAENTDataGridViewTextBoxColumn";
+            // 
+            // controDATASAIDADataGridViewTextBoxColumn
+            // 
+            this.controDATASAIDADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_SAIDA";
+            this.controDATASAIDADataGridViewTextBoxColumn.HeaderText = "contro_DATA_SAIDA";
+            this.controDATASAIDADataGridViewTextBoxColumn.Name = "controDATASAIDADataGridViewTextBoxColumn";
+            // 
+            // controCODFORNECEDORDataGridViewTextBoxColumn
+            // 
+            this.controCODFORNECEDORDataGridViewTextBoxColumn.DataPropertyName = "contro_COD_FORNECEDOR";
+            this.controCODFORNECEDORDataGridViewTextBoxColumn.HeaderText = "contro_COD_FORNECEDOR";
+            this.controCODFORNECEDORDataGridViewTextBoxColumn.Name = "controCODFORNECEDORDataGridViewTextBoxColumn";
+            // 
+            // controRSOCIALDataGridViewTextBoxColumn
+            // 
+            this.controRSOCIALDataGridViewTextBoxColumn.DataPropertyName = "contro_RSOCIAL";
+            this.controRSOCIALDataGridViewTextBoxColumn.HeaderText = "contro_RSOCIAL";
+            this.controRSOCIALDataGridViewTextBoxColumn.Name = "controRSOCIALDataGridViewTextBoxColumn";
+            // 
+            // controUNIDADEDataGridViewTextBoxColumn
+            // 
+            this.controUNIDADEDataGridViewTextBoxColumn.DataPropertyName = "contro_UNIDADE";
+            this.controUNIDADEDataGridViewTextBoxColumn.HeaderText = "contro_UNIDADE";
+            this.controUNIDADEDataGridViewTextBoxColumn.Name = "controUNIDADEDataGridViewTextBoxColumn";
+            // 
+            // cadCDDataGridViewTextBoxColumn
+            // 
+            this.cadCDDataGridViewTextBoxColumn.DataPropertyName = "cad_CD";
+            this.cadCDDataGridViewTextBoxColumn.HeaderText = "cad_CD";
+            this.cadCDDataGridViewTextBoxColumn.Name = "cadCDDataGridViewTextBoxColumn";
+            // 
+            // produtoscdDataGridViewTextBoxColumn
+            // 
+            this.produtoscdDataGridViewTextBoxColumn.DataPropertyName = "produtos_cd";
+            this.produtoscdDataGridViewTextBoxColumn.HeaderText = "produtos_cd";
+            this.produtoscdDataGridViewTextBoxColumn.Name = "produtoscdDataGridViewTextBoxColumn";
+            // 
+            // controleestoqueBindingSource
+            // 
+            this.controleestoqueBindingSource.DataMember = "controle_estoque";
+            this.controleestoqueBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -175,92 +253,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // controleestoqueBindingSource
-            // 
-            this.controleestoqueBindingSource.DataMember = "controle_estoque";
-            this.controleestoqueBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // controle_estoqueTableAdapter
             // 
             this.controle_estoqueTableAdapter.ClearBeforeFill = true;
             // 
-            // controCDDataGridViewTextBoxColumn
+            // label3
             // 
-            this.controCDDataGridViewTextBoxColumn.DataPropertyName = "contro_CD";
-            this.controCDDataGridViewTextBoxColumn.HeaderText = "contro_CD";
-            this.controCDDataGridViewTextBoxColumn.Name = "controCDDataGridViewTextBoxColumn";
-            this.controCDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // controCDPRODataGridViewTextBoxColumn
-            // 
-            this.controCDPRODataGridViewTextBoxColumn.DataPropertyName = "contro_CD_PRO";
-            this.controCDPRODataGridViewTextBoxColumn.HeaderText = "contro_CD_PRO";
-            this.controCDPRODataGridViewTextBoxColumn.Name = "controCDPRODataGridViewTextBoxColumn";
-            // 
-            // controDESCRIDataGridViewTextBoxColumn
-            // 
-            this.controDESCRIDataGridViewTextBoxColumn.DataPropertyName = "contro_DESCRI";
-            this.controDESCRIDataGridViewTextBoxColumn.HeaderText = "contro_DESCRI";
-            this.controDESCRIDataGridViewTextBoxColumn.Name = "controDESCRIDataGridViewTextBoxColumn";
-            // 
-            // controDATADataGridViewTextBoxColumn
-            // 
-            this.controDATADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA";
-            this.controDATADataGridViewTextBoxColumn.HeaderText = "contro_DATA";
-            this.controDATADataGridViewTextBoxColumn.Name = "controDATADataGridViewTextBoxColumn";
-            // 
-            // controDATAENTDataGridViewTextBoxColumn
-            // 
-            this.controDATAENTDataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_ENT";
-            this.controDATAENTDataGridViewTextBoxColumn.HeaderText = "contro_DATA_ENT";
-            this.controDATAENTDataGridViewTextBoxColumn.Name = "controDATAENTDataGridViewTextBoxColumn";
-            // 
-            // controDATASAIDADataGridViewTextBoxColumn
-            // 
-            this.controDATASAIDADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_SAIDA";
-            this.controDATASAIDADataGridViewTextBoxColumn.HeaderText = "contro_DATA_SAIDA";
-            this.controDATASAIDADataGridViewTextBoxColumn.Name = "controDATASAIDADataGridViewTextBoxColumn";
-            // 
-            // controCODFORNECEDORDataGridViewTextBoxColumn
-            // 
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.DataPropertyName = "contro_COD_FORNECEDOR";
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.HeaderText = "contro_COD_FORNECEDOR";
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.Name = "controCODFORNECEDORDataGridViewTextBoxColumn";
-            // 
-            // controRSOCIALDataGridViewTextBoxColumn
-            // 
-            this.controRSOCIALDataGridViewTextBoxColumn.DataPropertyName = "contro_RSOCIAL";
-            this.controRSOCIALDataGridViewTextBoxColumn.HeaderText = "contro_RSOCIAL";
-            this.controRSOCIALDataGridViewTextBoxColumn.Name = "controRSOCIALDataGridViewTextBoxColumn";
-            // 
-            // controUNIDADEDataGridViewTextBoxColumn
-            // 
-            this.controUNIDADEDataGridViewTextBoxColumn.DataPropertyName = "contro_UNIDADE";
-            this.controUNIDADEDataGridViewTextBoxColumn.HeaderText = "contro_UNIDADE";
-            this.controUNIDADEDataGridViewTextBoxColumn.Name = "controUNIDADEDataGridViewTextBoxColumn";
-            // 
-            // cadCDDataGridViewTextBoxColumn
-            // 
-            this.cadCDDataGridViewTextBoxColumn.DataPropertyName = "cad_CD";
-            this.cadCDDataGridViewTextBoxColumn.HeaderText = "cad_CD";
-            this.cadCDDataGridViewTextBoxColumn.Name = "cadCDDataGridViewTextBoxColumn";
-            // 
-            // produtoscdDataGridViewTextBoxColumn
-            // 
-            this.produtoscdDataGridViewTextBoxColumn.DataPropertyName = "produtos_cd";
-            this.produtoscdDataGridViewTextBoxColumn.HeaderText = "produtos_cd";
-            this.produtoscdDataGridViewTextBoxColumn.Name = "produtoscdDataGridViewTextBoxColumn";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(54, 396);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 31);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "RAÇÃODOVALE";
             // 
             // FrmPessEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -273,11 +288,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FrmPessEstoque";
-            this.Text = "FrmPessEstoque";
+            this.Text = "FrmPesEstoque";
             this.Load += new System.EventHandler(this.FrmPessEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +325,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn controUNIDADEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cadCDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtoscdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

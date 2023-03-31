@@ -50,6 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cadastro_clienteTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_clienteTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroclienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
@@ -68,7 +69,7 @@
             this.cadastrofoneDataGridViewTextBoxColumn,
             this.cadastrofonereferenciaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadastroclienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 246);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 216);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(754, 150);
@@ -224,11 +225,24 @@
             // 
             this.cadastro_clienteTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(256, 393);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 31);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "RAÇÃODOVALE";
+            // 
             // FrmPesCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -274,5 +288,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cadastroEmailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cadastrofoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cadastrofonereferenciaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

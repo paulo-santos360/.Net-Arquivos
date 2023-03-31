@@ -55,6 +55,7 @@ namespace Projeto_Ração
             this.Visible = false;
             FrmAltPromocao newAlterar = new FrmAltPromocao();
             newAlterar.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)

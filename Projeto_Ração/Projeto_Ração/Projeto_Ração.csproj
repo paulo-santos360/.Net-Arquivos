@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadCaixa.resx">
       <DependentUpon>CadCaixa.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,7 +293,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SPLASH.resx">
+      <DependentUpon>SPLASH.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -308,6 +321,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-cottonbro-studio-5474282.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raçao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raçao1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raçao2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casas-de-racao-sorocaba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d264292668843a7160970af09016a71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-balcao-caixa_574058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferir %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

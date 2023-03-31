@@ -30,25 +30,27 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroDeFunciorarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeFornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadFornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.promoçãoDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTROLEDECAIXAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroDeFunciorarioToolStripMenuItem,
-            this.cToolStripMenuItem,
-            this.cadastroDeFornecedorToolStripMenuItem,
             this.controleDeCaixaToolStripMenuItem,
             this.cadastroToolStripMenuItem,
             this.contrToolStripMenuItem,
@@ -56,100 +58,145 @@
             this.restoreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(985, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // cadastroDeFunciorarioToolStripMenuItem
             // 
+            this.cadastroDeFunciorarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadFuncionarioToolStripMenuItem,
+            this.cadClienteToolStripMenuItem,
+            this.cadFornecedorToolStripMenuItem,
+            this.cadToolStripMenuItem});
+            this.cadastroDeFunciorarioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastroDeFunciorarioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cadastroDeFunciorarioToolStripMenuItem.Name = "cadastroDeFunciorarioToolStripMenuItem";
-            this.cadastroDeFunciorarioToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
-            this.cadastroDeFunciorarioToolStripMenuItem.Text = "Cad Funciorario";
+            this.cadastroDeFunciorarioToolStripMenuItem.Size = new System.Drawing.Size(129, 36);
+            this.cadastroDeFunciorarioToolStripMenuItem.Text = "CADASTRO";
             this.cadastroDeFunciorarioToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeFunciorarioToolStripMenuItem_Click);
             // 
-            // cToolStripMenuItem
+            // cadFuncionarioToolStripMenuItem
             // 
-            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.cToolStripMenuItem.Text = "Cad Cliente";
-            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
+            this.cadFuncionarioToolStripMenuItem.Name = "cadFuncionarioToolStripMenuItem";
+            this.cadFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.cadFuncionarioToolStripMenuItem.Text = "CAD FUNCIONARIO";
+            this.cadFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.cadFuncionarioToolStripMenuItem_Click);
             // 
-            // cadastroDeFornecedorToolStripMenuItem
+            // cadClienteToolStripMenuItem
             // 
-            this.cadastroDeFornecedorToolStripMenuItem.Name = "cadastroDeFornecedorToolStripMenuItem";
-            this.cadastroDeFornecedorToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
-            this.cadastroDeFornecedorToolStripMenuItem.Text = "Cad Fornecedor";
-            this.cadastroDeFornecedorToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeFornecedorToolStripMenuItem_Click);
+            this.cadClienteToolStripMenuItem.Name = "cadClienteToolStripMenuItem";
+            this.cadClienteToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.cadClienteToolStripMenuItem.Text = "CAD CLIENTE";
+            this.cadClienteToolStripMenuItem.Click += new System.EventHandler(this.cadClienteToolStripMenuItem_Click);
+            // 
+            // cadFornecedorToolStripMenuItem
+            // 
+            this.cadFornecedorToolStripMenuItem.Name = "cadFornecedorToolStripMenuItem";
+            this.cadFornecedorToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.cadFornecedorToolStripMenuItem.Text = "CAD FORNECEDOR";
+            this.cadFornecedorToolStripMenuItem.Click += new System.EventHandler(this.cadFornecedorToolStripMenuItem_Click);
+            // 
+            // cadToolStripMenuItem
+            // 
+            this.cadToolStripMenuItem.Name = "cadToolStripMenuItem";
+            this.cadToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.cadToolStripMenuItem.Text = "CAD PRODUTOS";
+            this.cadToolStripMenuItem.Click += new System.EventHandler(this.cadToolStripMenuItem_Click);
             // 
             // controleDeCaixaToolStripMenuItem
             // 
             this.controleDeCaixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.controleDeToolStripMenuItem});
+            this.controleDeToolStripMenuItem,
+            this.cONTROLEDECAIXAToolStripMenuItem1});
+            this.controleDeCaixaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controleDeCaixaToolStripMenuItem.Name = "controleDeCaixaToolStripMenuItem";
-            this.controleDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
-            this.controleDeCaixaToolStripMenuItem.Text = "Controle de Caixa";
+            this.controleDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.controleDeCaixaToolStripMenuItem.Text = "CONTAS";
             this.controleDeCaixaToolStripMenuItem.Click += new System.EventHandler(this.controleDeCaixaToolStripMenuItem_Click);
             // 
             // controleDeToolStripMenuItem
             // 
             this.controleDeToolStripMenuItem.Name = "controleDeToolStripMenuItem";
-            this.controleDeToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.controleDeToolStripMenuItem.Text = "Contas ";
+            this.controleDeToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
+            this.controleDeToolStripMenuItem.Text = "CONTAS";
+            this.controleDeToolStripMenuItem.Click += new System.EventHandler(this.controleDeToolStripMenuItem_Click);
             // 
             // cadastroToolStripMenuItem
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.promoçãoDeProdutosToolStripMenuItem,
-            this.cadProdutosToolStripMenuItem});
+            this.cadastroToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.cadastroToolStripMenuItem.Text = "Produtos";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(234, 36);
+            this.cadastroToolStripMenuItem.Text = "PROMOÇÃO DE PRODUTOS";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
-            // 
-            // promoçãoDeProdutosToolStripMenuItem
-            // 
-            this.promoçãoDeProdutosToolStripMenuItem.Name = "promoçãoDeProdutosToolStripMenuItem";
-            this.promoçãoDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.promoçãoDeProdutosToolStripMenuItem.Text = "Promoção de Produtos";
-            this.promoçãoDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.promoçãoDeProdutosToolStripMenuItem_Click);
             // 
             // contrToolStripMenuItem
             // 
+            this.contrToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrToolStripMenuItem.Name = "contrToolStripMenuItem";
-            this.contrToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.contrToolStripMenuItem.Text = "Contr Estoque";
+            this.contrToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
+            this.contrToolStripMenuItem.Text = "ESTOQUE";
             this.contrToolStripMenuItem.Click += new System.EventHandler(this.contrToolStripMenuItem_Click);
             // 
             // backupToolStripMenuItem
             // 
+            this.backupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(112, 36);
             this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // restoreToolStripMenuItem
             // 
             this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
-            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
             this.restoreToolStripMenuItem.Text = "Restore";
             // 
-            // cadProdutosToolStripMenuItem
+            // cONTROLEDECAIXAToolStripMenuItem1
             // 
-            this.cadProdutosToolStripMenuItem.Name = "cadProdutosToolStripMenuItem";
-            this.cadProdutosToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.cadProdutosToolStripMenuItem.Text = "Cad Produtos";
-            this.cadProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadProdutosToolStripMenuItem_Click);
+            this.cONTROLEDECAIXAToolStripMenuItem1.Name = "cONTROLEDECAIXAToolStripMenuItem1";
+            this.cONTROLEDECAIXAToolStripMenuItem1.Size = new System.Drawing.Size(246, 26);
+            this.cONTROLEDECAIXAToolStripMenuItem1.Text = "CONTROLE DE CAIXA";
+            this.cONTROLEDECAIXAToolStripMenuItem1.Click += new System.EventHandler(this.cONTROLEDECAIXAToolStripMenuItem1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Location = new System.Drawing.Point(40, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(232, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "RAÇÃODOVALE";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.casas_de_racao_sorocaba;
+            this.pictureBox1.Location = new System.Drawing.Point(346, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(639, 405);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.ClientSize = new System.Drawing.Size(985, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MENU";
-            this.Text = "Form3";
+            this.Text = "MENU DA LOJA";
+            this.Load += new System.EventHandler(this.MENU_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,15 +206,18 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroDeFunciorarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeFornecedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeCaixaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem promoçãoDeProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contrToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restoreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadFuncionarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadFornecedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONTROLEDECAIXAToolStripMenuItem1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

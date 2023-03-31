@@ -33,6 +33,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -48,11 +50,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.controle_estoqueTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -92,6 +93,16 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 37;
+            // 
+            // controleestoqueBindingSource
+            // 
+            this.controleestoqueBindingSource.DataMember = "controle_estoque";
+            this.controleestoqueBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox7
             // 
@@ -221,25 +232,28 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "CODIGO DO PRODUTO";
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // controleestoqueBindingSource
-            // 
-            this.controleestoqueBindingSource.DataMember = "controle_estoque";
-            this.controleestoqueBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // controle_estoqueTableAdapter
             // 
             this.controle_estoqueTableAdapter.ClearBeforeFill = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label9.Location = new System.Drawing.Point(59, 280);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(232, 31);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "RAÇÃODOVALE";
             // 
             // ForAltEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
@@ -262,8 +276,8 @@
             this.Name = "ForAltEstoque";
             this.Text = "ForAltEstoque";
             this.Load += new System.EventHandler(this.ForAltEstoque_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +307,6 @@
         private RacaodovaleDataSet racaodovaleDataSet;
         private System.Windows.Forms.BindingSource controleestoqueBindingSource;
         private RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter controle_estoqueTableAdapter;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -42,6 +42,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.promocaoprodutoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
@@ -152,11 +153,23 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label4.Location = new System.Drawing.Point(540, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(232, 31);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "RAÇÃODOVALE";
+            // 
             // PROMOCAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
@@ -168,7 +181,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PROMOCAO";
-            this.Text = "PROMOCAO";
+            this.Text = "PROMOCAO DA LOJA";
             this.Load += new System.EventHandler(this.PROMOCAO_Load);
             ((System.ComponentModel.ISupportInitialize)(this.promocaoprodutoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
@@ -192,5 +205,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label4;
     }
 }

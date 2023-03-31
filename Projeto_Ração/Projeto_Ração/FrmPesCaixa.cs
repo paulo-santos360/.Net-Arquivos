@@ -45,8 +45,7 @@ namespace Projeto_Ração
 
         private void button1_Click(object sender, EventArgs e)
         {
-            controlecaixaBindingSource.Filter = string.Format("contro_cd={0}", textBox1.Text);
-
+            controlecaixaBindingSource.Filter = string.Format("controle_cd={0}", textBox1.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)

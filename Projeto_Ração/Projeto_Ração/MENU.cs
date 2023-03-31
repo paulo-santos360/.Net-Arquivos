@@ -26,16 +26,12 @@ namespace Projeto_Ração
 
         private void controleDeCaixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadCaixa colaba = new CadCaixa();
-            this.Hide();
-            colaba.ShowDialog();
+        
         }
 
         private void cadastroDeFunciorarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadFunc colaba = new CadFunc();
-            this.Hide();
-            colaba.ShowDialog();
+            
         }
 
         private void cToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,7 +43,9 @@ namespace Projeto_Ração
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            PROMOCAO colabD = new PROMOCAO();
+            this.Hide();
+            colabD.ShowDialog();
 
         }
 
@@ -70,6 +68,63 @@ namespace Projeto_Ração
             produto colabE = new produto();
             this.Hide();
             colabE.ShowDialog();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadFunc colaba = new CadFunc();
+            this.Hide();
+            colaba.ShowDialog();
+        }
+
+        private void cadClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadCliente colabB = new CadCliente();
+            this.Hide();
+            colabB.ShowDialog();
+        }
+
+        private void cadFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadFornecedor colaba = new FrmCadFornecedor();
+            this.Hide();
+            colaba.ShowDialog();
+        }
+
+        private void controleDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            produto colabE = new produto();
+            this.Hide();
+            colabE.ShowDialog();
+        }
+
+        private void cONTROLEDEESTOQUEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CONTROLE colabE = new CONTROLE();
+            this.Hide();
+            colabE.ShowDialog();
+        }
+
+        private void cONTROLEDECAIXAToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CadCaixa colaba = new CadCaixa();
+            this.Hide();
+            colaba.ShowDialog();
+        }
+
+        private void MENU_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

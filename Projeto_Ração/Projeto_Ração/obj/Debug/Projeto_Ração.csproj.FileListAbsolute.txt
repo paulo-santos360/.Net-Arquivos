@@ -32,3 +32,5 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.ForAltEstoque.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmPessEstoque.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmAltPromocao.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.SPLASH.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.Backup.resources

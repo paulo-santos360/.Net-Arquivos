@@ -30,6 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.produtoscdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosdescDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosmarcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtostamanhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosvalorcompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosvalorvendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -40,18 +48,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
-            this.produtoscdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosdescDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosmarcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtostamanhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosvalorcompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtosvalorvendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -66,12 +67,59 @@
             this.produtosvalorcompraDataGridViewTextBoxColumn,
             this.produtosvalorvendaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadastroprodutosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 249);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 211);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(688, 150);
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // produtoscdDataGridViewTextBoxColumn
+            // 
+            this.produtoscdDataGridViewTextBoxColumn.DataPropertyName = "produtos_cd";
+            this.produtoscdDataGridViewTextBoxColumn.HeaderText = "produtos_cd";
+            this.produtoscdDataGridViewTextBoxColumn.Name = "produtoscdDataGridViewTextBoxColumn";
+            this.produtoscdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // produtosdescDataGridViewTextBoxColumn
+            // 
+            this.produtosdescDataGridViewTextBoxColumn.DataPropertyName = "produtos_desc";
+            this.produtosdescDataGridViewTextBoxColumn.HeaderText = "produtos_desc";
+            this.produtosdescDataGridViewTextBoxColumn.Name = "produtosdescDataGridViewTextBoxColumn";
+            // 
+            // produtosmarcaDataGridViewTextBoxColumn
+            // 
+            this.produtosmarcaDataGridViewTextBoxColumn.DataPropertyName = "produtos_marca";
+            this.produtosmarcaDataGridViewTextBoxColumn.HeaderText = "produtos_marca";
+            this.produtosmarcaDataGridViewTextBoxColumn.Name = "produtosmarcaDataGridViewTextBoxColumn";
+            // 
+            // produtostamanhoDataGridViewTextBoxColumn
+            // 
+            this.produtostamanhoDataGridViewTextBoxColumn.DataPropertyName = "produtos_tamanho";
+            this.produtostamanhoDataGridViewTextBoxColumn.HeaderText = "produtos_tamanho";
+            this.produtostamanhoDataGridViewTextBoxColumn.Name = "produtostamanhoDataGridViewTextBoxColumn";
+            // 
+            // produtosvalorcompraDataGridViewTextBoxColumn
+            // 
+            this.produtosvalorcompraDataGridViewTextBoxColumn.DataPropertyName = "produtos_valor_compra";
+            this.produtosvalorcompraDataGridViewTextBoxColumn.HeaderText = "produtos_valor_compra";
+            this.produtosvalorcompraDataGridViewTextBoxColumn.Name = "produtosvalorcompraDataGridViewTextBoxColumn";
+            // 
+            // produtosvalorvendaDataGridViewTextBoxColumn
+            // 
+            this.produtosvalorvendaDataGridViewTextBoxColumn.DataPropertyName = "produtos_valor_venda";
+            this.produtosvalorvendaDataGridViewTextBoxColumn.HeaderText = "produtos_valor_venda";
+            this.produtosvalorvendaDataGridViewTextBoxColumn.Name = "produtosvalorvendaDataGridViewTextBoxColumn";
+            // 
+            // cadastroprodutosBindingSource
+            // 
+            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
+            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -169,62 +217,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadastroprodutosBindingSource
-            // 
-            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
-            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // cadastro_produtosTableAdapter
             // 
             this.cadastro_produtosTableAdapter.ClearBeforeFill = true;
             // 
-            // produtoscdDataGridViewTextBoxColumn
+            // label3
             // 
-            this.produtoscdDataGridViewTextBoxColumn.DataPropertyName = "produtos_cd";
-            this.produtoscdDataGridViewTextBoxColumn.HeaderText = "produtos_cd";
-            this.produtoscdDataGridViewTextBoxColumn.Name = "produtoscdDataGridViewTextBoxColumn";
-            this.produtoscdDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // produtosdescDataGridViewTextBoxColumn
-            // 
-            this.produtosdescDataGridViewTextBoxColumn.DataPropertyName = "produtos_desc";
-            this.produtosdescDataGridViewTextBoxColumn.HeaderText = "produtos_desc";
-            this.produtosdescDataGridViewTextBoxColumn.Name = "produtosdescDataGridViewTextBoxColumn";
-            // 
-            // produtosmarcaDataGridViewTextBoxColumn
-            // 
-            this.produtosmarcaDataGridViewTextBoxColumn.DataPropertyName = "produtos_marca";
-            this.produtosmarcaDataGridViewTextBoxColumn.HeaderText = "produtos_marca";
-            this.produtosmarcaDataGridViewTextBoxColumn.Name = "produtosmarcaDataGridViewTextBoxColumn";
-            // 
-            // produtostamanhoDataGridViewTextBoxColumn
-            // 
-            this.produtostamanhoDataGridViewTextBoxColumn.DataPropertyName = "produtos_tamanho";
-            this.produtostamanhoDataGridViewTextBoxColumn.HeaderText = "produtos_tamanho";
-            this.produtostamanhoDataGridViewTextBoxColumn.Name = "produtostamanhoDataGridViewTextBoxColumn";
-            // 
-            // produtosvalorcompraDataGridViewTextBoxColumn
-            // 
-            this.produtosvalorcompraDataGridViewTextBoxColumn.DataPropertyName = "produtos_valor_compra";
-            this.produtosvalorcompraDataGridViewTextBoxColumn.HeaderText = "produtos_valor_compra";
-            this.produtosvalorcompraDataGridViewTextBoxColumn.Name = "produtosvalorcompraDataGridViewTextBoxColumn";
-            // 
-            // produtosvalorvendaDataGridViewTextBoxColumn
-            // 
-            this.produtosvalorvendaDataGridViewTextBoxColumn.DataPropertyName = "produtos_valor_venda";
-            this.produtosvalorvendaDataGridViewTextBoxColumn.HeaderText = "produtos_valor_venda";
-            this.produtosvalorvendaDataGridViewTextBoxColumn.Name = "produtosvalorvendaDataGridViewTextBoxColumn";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(73, 388);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 31);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "RAÇÃODOVALE";
             // 
             // FrmPesProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -240,8 +254,8 @@
             this.Text = "FrmPesProduto";
             this.Load += new System.EventHandler(this.FrmPesProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +283,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn produtostamanhoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtosvalorcompraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtosvalorvendaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }
