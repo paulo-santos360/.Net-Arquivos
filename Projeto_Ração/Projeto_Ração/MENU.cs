@@ -98,7 +98,9 @@ namespace Projeto_Ração
 
         private void controleDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            CONTAS colabE = new CONTAS();
+            this.Hide();
+            colabE.ShowDialog();
         }
 
         private void cadToolStripMenuItem_Click(object sender, EventArgs e)

@@ -112,6 +112,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "CONECTA";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
@@ -119,6 +120,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "Senac123";
             // 
             // textBox2
             // 
@@ -126,6 +128,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "sa";
             // 
             // textBox1
             // 
@@ -133,6 +136,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "SJC0562934W10-1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -307,6 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button9);
@@ -318,6 +324,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Backup";
             this.Text = "Backup E Restaurar";
+            this.Load += new System.EventHandler(this.Backup_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

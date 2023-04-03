@@ -49,6 +49,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.controle_caixaTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.controle_caixaTableAdapter();
             this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.controlecaixaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
@@ -119,7 +120,7 @@
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_abertura_caixa", true));
             this.textBox1.Location = new System.Drawing.Point(20, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(116, 21);
             this.textBox1.TabIndex = 6;
@@ -138,7 +139,7 @@
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_fechamento_caixa", true));
             this.textBox2.Location = new System.Drawing.Point(245, 66);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 21);
             this.textBox2.TabIndex = 7;
@@ -147,7 +148,7 @@
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_cd_barra", true));
             this.textBox3.Location = new System.Drawing.Point(245, 139);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(116, 21);
             this.textBox3.TabIndex = 8;
@@ -156,7 +157,7 @@
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_desc", true));
             this.textBox4.Location = new System.Drawing.Point(20, 139);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(116, 21);
             this.textBox4.TabIndex = 9;
@@ -165,7 +166,7 @@
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_QT", true));
             this.textBox5.Location = new System.Drawing.Point(20, 221);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(116, 21);
             this.textBox5.TabIndex = 10;
@@ -174,7 +175,7 @@
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controlecaixaBindingSource, "controle_VALOR_PRO", true));
             this.textBox6.Location = new System.Drawing.Point(245, 221);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(116, 21);
             this.textBox6.TabIndex = 11;
@@ -182,7 +183,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(20, 286);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 26);
             this.button1.TabIndex = 12;
@@ -193,7 +194,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(219, 286);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(142, 26);
             this.button3.TabIndex = 14;
@@ -204,7 +205,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(20, 346);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(142, 26);
             this.button5.TabIndex = 16;
@@ -215,7 +216,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(219, 346);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(142, 31);
             this.button6.TabIndex = 17;
@@ -239,11 +240,22 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "RAÇÃODOVALE";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label9.Location = new System.Drawing.Point(106, 398);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(232, 31);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "RAÇÃODOVALE";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources._16_balcao_caixa_574058;
             this.pictureBox1.Location = new System.Drawing.Point(463, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(399, 396);
             this.pictureBox1.TabIndex = 19;
@@ -253,8 +265,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(934, 519);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
@@ -275,7 +288,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadCaixa";
             this.Text = "CadCaixa";
             this.Load += new System.EventHandler(this.CadCaixa_Load);
@@ -310,5 +323,6 @@
         private RacaodovaleDataSetTableAdapters.controle_caixaTableAdapter controle_caixaTableAdapter;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
     }
 }

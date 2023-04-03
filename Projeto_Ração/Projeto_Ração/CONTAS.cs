@@ -57,5 +57,12 @@ namespace Projeto_Ração
             contasBindingSource.AddNew();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MENU colab5 = new MENU();
+            this.Hide();
+            colab5.ShowDialog();
+        }
     }
 }

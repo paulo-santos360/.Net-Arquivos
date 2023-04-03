@@ -59,7 +59,7 @@
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_NM", true));
             this.textBox1.Location = new System.Drawing.Point(20, 47);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 23);
             this.textBox1.TabIndex = 0;
@@ -78,7 +78,7 @@
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_Email", true));
             this.textBox2.Location = new System.Drawing.Point(20, 146);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 23);
             this.textBox2.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_RG", true));
             this.textBox3.Location = new System.Drawing.Point(20, 243);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 23);
             this.textBox3.TabIndex = 2;
@@ -97,7 +97,7 @@
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_fone", true));
             this.textBox4.Location = new System.Drawing.Point(242, 47);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(132, 23);
             this.textBox4.TabIndex = 3;
@@ -106,7 +106,7 @@
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_DT_NASC", true));
             this.textBox5.Location = new System.Drawing.Point(242, 146);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 23);
             this.textBox5.TabIndex = 4;
@@ -115,7 +115,7 @@
             // 
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_fone_referencia", true));
             this.textBox6.Location = new System.Drawing.Point(242, 243);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(132, 23);
             this.textBox6.TabIndex = 5;
@@ -183,7 +183,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(20, 308);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 12;
@@ -194,7 +194,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(20, 372);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 30);
             this.button3.TabIndex = 14;
@@ -209,7 +209,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(242, 372);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 30);
             this.button5.TabIndex = 16;
@@ -220,7 +220,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(240, 308);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 30);
             this.button6.TabIndex = 17;
@@ -244,7 +244,7 @@
             // 
             this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.transferir;
             this.pictureBox1.Location = new System.Drawing.Point(483, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 196);
             this.pictureBox1.TabIndex = 19;
@@ -254,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(879, 483);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
@@ -276,7 +276,7 @@
             this.Controls.Add(this.textBox1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroclienteBindingSource, "cadastro_NM", true));
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadCliente";
             this.Text = "CADASTRO DE CLIENTE";
             this.Load += new System.EventHandler(this.CadCliente_Load);

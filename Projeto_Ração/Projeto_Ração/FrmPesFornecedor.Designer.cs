@@ -51,15 +51,17 @@
             this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.cadast_fornecedorTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadast_fornecedorTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 52);
+            this.label1.Location = new System.Drawing.Point(9, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 13);
             this.label1.TabIndex = 0;
@@ -68,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 118);
+            this.label2.Location = new System.Drawing.Point(12, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 1;
@@ -76,21 +78,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 82);
+            this.textBox1.Location = new System.Drawing.Point(12, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 149);
+            this.textBox2.Location = new System.Drawing.Point(12, 124);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(325, 79);
+            this.button1.Location = new System.Drawing.Point(145, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -100,7 +102,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(330, 142);
+            this.button2.Location = new System.Drawing.Point(145, 124);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -110,7 +112,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(496, 82);
+            this.button3.Location = new System.Drawing.Point(12, 165);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -120,7 +122,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(495, 142);
+            this.button4.Location = new System.Drawing.Point(12, 210);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 7;
@@ -130,7 +132,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(642, 81);
+            this.button5.Location = new System.Drawing.Point(145, 165);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 8;
@@ -140,7 +142,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(642, 142);
+            this.button6.Location = new System.Drawing.Point(145, 210);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 9;
@@ -161,7 +163,7 @@
             this.fornFONEDataGridViewTextBoxColumn,
             this.fornEmailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadastfornecedorBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 204);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(683, 150);
@@ -229,17 +231,26 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(141, 380);
+            this.label3.Location = new System.Drawing.Point(25, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(232, 31);
             this.label3.TabIndex = 11;
             this.label3.Text = "RAÇÃODOVALE";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.fornecedores;
+            this.pictureBox1.Location = new System.Drawing.Point(264, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(534, 435);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPesFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -253,12 +264,14 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmPesFornecedor";
             this.Text = "FrmPesFornecedor";
             this.Load += new System.EventHandler(this.FrmPesFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastfornecedorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +301,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fornFONEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fornEmailDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -45,14 +45,16 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 56);
+            this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
@@ -61,7 +63,7 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_USUARIO", true));
-            this.textBox1.Location = new System.Drawing.Point(87, 91);
+            this.textBox1.Location = new System.Drawing.Point(12, 59);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
@@ -80,7 +82,7 @@
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_SENHA", true));
-            this.textBox2.Location = new System.Drawing.Point(87, 161);
+            this.textBox2.Location = new System.Drawing.Point(12, 146);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 2;
@@ -88,7 +90,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 134);
+            this.label2.Location = new System.Drawing.Point(17, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 4;
@@ -97,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 210);
+            this.label3.Location = new System.Drawing.Point(20, 196);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 5;
@@ -107,14 +109,14 @@
             // 
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_CARGO", true));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 238);
+            this.comboBox1.Location = new System.Drawing.Point(12, 238);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(95, 339);
+            this.button1.Location = new System.Drawing.Point(15, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
@@ -124,7 +126,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(298, 339);
+            this.button2.Location = new System.Drawing.Point(110, 385);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -133,17 +135,17 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(510, 339);
+            this.button3.Location = new System.Drawing.Point(225, 385);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
-            this.button3.Text = "button3";
+            this.button3.Text = "Voltar";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_USUARIO", true));
-            this.textBox3.Location = new System.Drawing.Point(505, 91);
+            this.textBox3.Location = new System.Drawing.Point(169, 59);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 10;
@@ -151,7 +153,7 @@
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_SENHA", true));
-            this.textBox4.Location = new System.Drawing.Point(505, 161);
+            this.textBox4.Location = new System.Drawing.Point(169, 146);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 11;
@@ -160,7 +162,7 @@
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_CARGO", true));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(505, 238);
+            this.comboBox2.Location = new System.Drawing.Point(169, 238);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 13;
@@ -174,11 +176,21 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(71, 395);
+            this.label4.Location = new System.Drawing.Point(37, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(232, 31);
             this.label4.TabIndex = 14;
             this.label4.Text = "RAÇÃODOVALE";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.OrangeRed;
+            this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.Account_Login_Button_PNG_Clipart;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(802, 450);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // LOGIN
             // 
@@ -199,11 +211,13 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "LOGIN";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +241,6 @@
         private System.Windows.Forms.BindingSource cadfuncionarioBindingSource;
         private RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter cad_funcionarioTableAdapter;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

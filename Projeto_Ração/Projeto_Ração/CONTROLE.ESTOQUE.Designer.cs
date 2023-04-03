@@ -54,9 +54,19 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -264,18 +274,96 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.raçao;
-            this.pictureBox1.Location = new System.Drawing.Point(384, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(338, 236);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(342, 344);
+            this.pictureBox1.Size = new System.Drawing.Size(462, 208);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.Snow;
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.controleestoqueBindingSource, "contro_CD", true));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(524, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 24;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.controleestoqueBindingSource, "contro_CD_PRO", true));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(524, 169);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 25;
+            // 
+            // textBox9
+            // 
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroprodutosBindingSource, "produtos_desc", true));
+            this.textBox9.Location = new System.Drawing.Point(678, 126);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 26;
+            // 
+            // textBox10
+            // 
+            this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controleestoqueBindingSource, "contro_CD_PRO", true));
+            this.textBox10.Location = new System.Drawing.Point(678, 170);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 27;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(619, 95);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "PRODUTOS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(400, 126);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "label11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(400, 179);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "label12";
+            // 
+            // cadastroprodutosBindingSource
+            // 
+            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
+            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // cadastro_produtosTableAdapter
+            // 
+            this.cadastro_produtosTableAdapter.ClearBeforeFill = true;
             // 
             // CONTROLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
@@ -305,6 +393,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,5 +426,14 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.BindingSource cadastroprodutosBindingSource;
+        private RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter cadastro_produtosTableAdapter;
     }
 }

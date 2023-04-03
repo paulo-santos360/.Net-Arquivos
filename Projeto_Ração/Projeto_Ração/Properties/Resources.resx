@@ -118,11 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="16-balcao-caixa_574058" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\16-balcao-caixa_574058.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="transferir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transferir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pexels-cottonbro-studio-5474282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-cottonbro-studio-5474282.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="casas-de-racao-sorocaba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casas-de-racao-sorocaba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,25 +127,43 @@
   <data name="o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3d264292668843a7160970af09016a71" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3d264292668843a7160970af09016a71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="n_45555_603107e69309e0846426fd3f516aef2b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\n_45555_603107e69309e0846426fd3f516aef2b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="raçao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\raçao1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1-funcionario-do-mes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-funcionario-do-mes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="raçao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\raçao2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="transferir (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transferir (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pexels-cottonbro-studio-5474282" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-cottonbro-studio-5474282.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="16-balcao-caixa_574058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16-balcao-caixa_574058.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boletoregistradolinko-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boletoregistradolinko-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\o-caixa-paga-com-cartao-atraves-do-terminalo-caixa-paga-com-cartao-atraves-do-terminal (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3d264292668843a7160970af09016a71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3d264292668843a7160970af09016a71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raçao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raçao2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raçao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raçao1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fornecedores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fornecedores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transferir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transferir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="raçao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\raçao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="transferir (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transferir (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Account-Login-Button-PNG-Clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Account-Login-Button-PNG-Clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

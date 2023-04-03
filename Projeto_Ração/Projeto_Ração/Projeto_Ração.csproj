@@ -355,5 +355,20 @@
   <ItemGroup>
     <None Include="Resources\transferir %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boletoregistradolinko-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_45555_603107e69309e0846426fd3f516aef2b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-funcionario-do-mes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account-Login-Button-PNG-Clipart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -62,6 +62,8 @@ namespace Projeto_Ração
 
         private void produto_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'racaodovaleDataSet.controle_estoque'. Você pode movê-la ou removê-la conforme necessário.
+            this.controle_estoqueTableAdapter.Fill(this.racaodovaleDataSet.controle_estoque);
             // TODO: esta linha de código carrega dados na tabela 'racaodovaleDataSet.cadastro_produtos'. Você pode movê-la ou removê-la conforme necessário.
             this.cadastro_produtosTableAdapter.Fill(this.racaodovaleDataSet.cadastro_produtos);
             cadastroprodutosBindingSource.AddNew();

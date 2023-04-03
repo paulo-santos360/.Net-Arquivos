@@ -32,16 +32,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -74,6 +74,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "RAÇÃODOVALE";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.raçao;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(485, 344);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(320, 216);
@@ -85,16 +95,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.raçao;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(485, 344);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // SPLASH
             // 

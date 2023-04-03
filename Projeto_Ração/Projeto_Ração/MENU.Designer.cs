@@ -36,11 +36,11 @@
             this.cadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTROLEDECAIXAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTROLEDECAIXAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -123,6 +123,13 @@
             this.controleDeToolStripMenuItem.Text = "CONTAS";
             this.controleDeToolStripMenuItem.Click += new System.EventHandler(this.controleDeToolStripMenuItem_Click);
             // 
+            // cONTROLEDECAIXAToolStripMenuItem1
+            // 
+            this.cONTROLEDECAIXAToolStripMenuItem1.Name = "cONTROLEDECAIXAToolStripMenuItem1";
+            this.cONTROLEDECAIXAToolStripMenuItem1.Size = new System.Drawing.Size(246, 26);
+            this.cONTROLEDECAIXAToolStripMenuItem1.Text = "CONTROLE DE CAIXA";
+            this.cONTROLEDECAIXAToolStripMenuItem1.Click += new System.EventHandler(this.cONTROLEDECAIXAToolStripMenuItem1_Click);
+            // 
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,13 +160,6 @@
             this.restoreToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
             this.restoreToolStripMenuItem.Text = "Restore";
             // 
-            // cONTROLEDECAIXAToolStripMenuItem1
-            // 
-            this.cONTROLEDECAIXAToolStripMenuItem1.Name = "cONTROLEDECAIXAToolStripMenuItem1";
-            this.cONTROLEDECAIXAToolStripMenuItem1.Size = new System.Drawing.Size(246, 26);
-            this.cONTROLEDECAIXAToolStripMenuItem1.Text = "CONTROLE DE CAIXA";
-            this.cONTROLEDECAIXAToolStripMenuItem1.Click += new System.EventHandler(this.cONTROLEDECAIXAToolStripMenuItem1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(985, 450);
             this.ControlBox = false;
             this.Controls.Add(this.label1);

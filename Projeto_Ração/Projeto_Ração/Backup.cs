@@ -16,5 +16,20 @@ namespace Projeto_Ração
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Backup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
