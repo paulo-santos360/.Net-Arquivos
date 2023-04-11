@@ -64,5 +64,12 @@ namespace Projeto_Ração
             this.Hide();
             colab5.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmPesContas colab5 = new FrmPesContas();
+            this.Hide();
+            colab5.ShowDialog();
+        }
     }
 }

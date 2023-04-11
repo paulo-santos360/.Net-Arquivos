@@ -25,7 +25,7 @@ namespace Projeto_Ração
             }
             else
             {
-                cadfuncionarioBindingSource.Filter = "cad_CD='" + textBox1.Text + "'";
+                cadfuncionarioBindingSource.Filter = "cad_USUARIO='" + textBox1.Text + "'";
 
                 if (textBox1.Text.ToUpper() != textBox3.Text.ToUpper())
                 {

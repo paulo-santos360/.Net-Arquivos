@@ -51,7 +51,7 @@ namespace Projeto_Ração
 
         private void contrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CONTROLE colabE = new CONTROLE();
+            CadControle colabE = new CadControle();
             this.Hide();
             colabE.ShowDialog();
         }
@@ -72,7 +72,9 @@ namespace Projeto_Ração
 
         private void backupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmBackupRest colabD = new frmBackupRest();
+            this.Hide();
+            colabD.ShowDialog();
         }
 
         private void cadFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,9 +107,9 @@ namespace Projeto_Ração
 
         private void cadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            produto colabE = new produto();
+            produto colabp = new produto();
             this.Hide();
-            colabE.ShowDialog();
+            colabp.ShowDialog();
         }
 
         private void cONTROLEDEESTOQUEToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,6 +129,13 @@ namespace Projeto_Ração
         private void MENU_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cAIXASOMAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            caixasoma colaba = new caixasoma();
+            this.Hide();
+            colaba.ShowDialog();
         }
     }
 }

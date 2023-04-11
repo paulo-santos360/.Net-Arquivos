@@ -45,7 +45,7 @@ namespace Projeto_Ração
 
         private void button1_Click(object sender, EventArgs e)
         {
-            produto colabh = new produto();
+            CadControle colabh = new CadControle();
             this.Hide();
             colabh.ShowDialog();
         }

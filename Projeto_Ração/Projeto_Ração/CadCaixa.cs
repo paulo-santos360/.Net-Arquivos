@@ -46,7 +46,12 @@ namespace Projeto_Ração
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Validate();
+            if (textBox1.Text.Length == 0 && textBox2.Text.Length == 0 && textBox3.Text.Length == 0 && textBox4.Text.Length == 0 && textBox5.Text.Length == 0 && textBox6.Text.Length == 0)
+            {
+                MessageBox.Show("Entre com os dados");
+            }
+            else
+                this.Validate();
             controlecaixaBindingSource.EndEdit();
             controle_caixaTableAdapter.Update(racaodovaleDataSet.controle_caixa);
             this.controle_caixaTableAdapter.Fill(this.racaodovaleDataSet.controle_caixa);

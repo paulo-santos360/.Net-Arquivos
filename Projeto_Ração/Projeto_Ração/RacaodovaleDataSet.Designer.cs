@@ -46,9 +46,7 @@ namespace Projeto_Ração {
         
         private global::System.Data.DataRelation relationFK__controle___produ__5DCAEF64;
         
-        private global::System.Data.DataRelation relationFK__controle___cad_C__403A8C7D;
-        
-        private global::System.Data.DataRelation relationFK__controle___produ__412EB0B6;
+        private global::System.Data.DataRelation relationFK__controle___produ__6FE99F9F;
         
         private global::System.Data.DataRelation relationFK__promocao___produ__46E78A0C;
         
@@ -377,8 +375,7 @@ namespace Projeto_Ração {
             this.relationFK__controle___cad_C__5CD6CB2B = this.Relations["FK__controle___cad_C__5CD6CB2B"];
             this.relationFK__controle___cadas__5EBF139D = this.Relations["FK__controle___cadas__5EBF139D"];
             this.relationFK__controle___produ__5DCAEF64 = this.Relations["FK__controle___produ__5DCAEF64"];
-            this.relationFK__controle___cad_C__403A8C7D = this.Relations["FK__controle___cad_C__403A8C7D"];
-            this.relationFK__controle___produ__412EB0B6 = this.Relations["FK__controle___produ__412EB0B6"];
+            this.relationFK__controle___produ__6FE99F9F = this.Relations["FK__controle___produ__6FE99F9F"];
             this.relationFK__promocao___produ__46E78A0C = this.Relations["FK__promocao___produ__46E78A0C"];
         }
         
@@ -418,14 +415,10 @@ namespace Projeto_Ração {
                         this.tablecadastro_produtos.produtos_cdColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_caixa.produtos_cdColumn}, false);
             this.Relations.Add(this.relationFK__controle___produ__5DCAEF64);
-            this.relationFK__controle___cad_C__403A8C7D = new global::System.Data.DataRelation("FK__controle___cad_C__403A8C7D", new global::System.Data.DataColumn[] {
-                        this.tablecad_funcionario.cad_CDColumn}, new global::System.Data.DataColumn[] {
-                        this.tablecontrole_estoque.cad_CDColumn}, false);
-            this.Relations.Add(this.relationFK__controle___cad_C__403A8C7D);
-            this.relationFK__controle___produ__412EB0B6 = new global::System.Data.DataRelation("FK__controle___produ__412EB0B6", new global::System.Data.DataColumn[] {
+            this.relationFK__controle___produ__6FE99F9F = new global::System.Data.DataRelation("FK__controle___produ__6FE99F9F", new global::System.Data.DataColumn[] {
                         this.tablecadastro_produtos.produtos_cdColumn}, new global::System.Data.DataColumn[] {
                         this.tablecontrole_estoque.produtos_cdColumn}, false);
-            this.Relations.Add(this.relationFK__controle___produ__412EB0B6);
+            this.Relations.Add(this.relationFK__controle___produ__6FE99F9F);
             this.relationFK__promocao___produ__46E78A0C = new global::System.Data.DataRelation("FK__promocao___produ__46E78A0C", new global::System.Data.DataColumn[] {
                         this.tablecadastro_produtos.produtos_cdColumn}, new global::System.Data.DataColumn[] {
                         this.tablepromocao_produto.produtos_cdColumn}, false);
@@ -2751,25 +2744,15 @@ namespace Projeto_Ração {
             
             private global::System.Data.DataColumn columncontro_CD;
             
-            private global::System.Data.DataColumn columncontro_CD_PRO;
+            private global::System.Data.DataColumn columnprodutos_cd;
             
-            private global::System.Data.DataColumn columncontro_DESCRI;
+            private global::System.Data.DataColumn columncontro_DATA_FABRICACAO;
             
-            private global::System.Data.DataColumn columncontro_DATA;
-            
-            private global::System.Data.DataColumn columncontro_DATA_ENT;
-            
-            private global::System.Data.DataColumn columncontro_DATA_SAIDA;
-            
-            private global::System.Data.DataColumn columncontro_COD_FORNECEDOR;
-            
-            private global::System.Data.DataColumn columncontro_RSOCIAL;
+            private global::System.Data.DataColumn columncontro_DATA_VENCIMENTO;
             
             private global::System.Data.DataColumn columncontro_UNIDADE;
             
-            private global::System.Data.DataColumn columncad_CD;
-            
-            private global::System.Data.DataColumn columnprodutos_cd;
+            private global::System.Data.DataColumn columncontro_QTD;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -2814,57 +2797,25 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_CD_PROColumn {
+            public global::System.Data.DataColumn produtos_cdColumn {
                 get {
-                    return this.columncontro_CD_PRO;
+                    return this.columnprodutos_cd;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_DESCRIColumn {
+            public global::System.Data.DataColumn contro_DATA_FABRICACAOColumn {
                 get {
-                    return this.columncontro_DESCRI;
+                    return this.columncontro_DATA_FABRICACAO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_DATAColumn {
+            public global::System.Data.DataColumn contro_DATA_VENCIMENTOColumn {
                 get {
-                    return this.columncontro_DATA;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_DATA_ENTColumn {
-                get {
-                    return this.columncontro_DATA_ENT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_DATA_SAIDAColumn {
-                get {
-                    return this.columncontro_DATA_SAIDA;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_COD_FORNECEDORColumn {
-                get {
-                    return this.columncontro_COD_FORNECEDOR;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn contro_RSOCIALColumn {
-                get {
-                    return this.columncontro_RSOCIAL;
+                    return this.columncontro_DATA_VENCIMENTO;
                 }
             }
             
@@ -2878,17 +2829,9 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn cad_CDColumn {
+            public global::System.Data.DataColumn contro_QTDColumn {
                 get {
-                    return this.columncad_CD;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn produtos_cdColumn {
-                get {
-                    return this.columnprodutos_cd;
+                    return this.columncontro_QTD;
                 }
             }
             
@@ -2929,25 +2872,17 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public controle_estoqueRow Addcontrole_estoqueRow(string contro_CD_PRO, string contro_DESCRI, string contro_DATA, string contro_DATA_ENT, string contro_DATA_SAIDA, string contro_COD_FORNECEDOR, string contro_RSOCIAL, string contro_UNIDADE, cad_funcionarioRow parentcad_funcionarioRowByFK__controle___cad_C__403A8C7D, cadastro_produtosRow parentcadastro_produtosRowByFK__controle___produ__412EB0B6) {
+            public controle_estoqueRow Addcontrole_estoqueRow(cadastro_produtosRow parentcadastro_produtosRowByFK__controle___produ__6FE99F9F, string contro_DATA_FABRICACAO, string contro_DATA_VENCIMENTO, string contro_UNIDADE, string contro_QTD) {
                 controle_estoqueRow rowcontrole_estoqueRow = ((controle_estoqueRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        contro_CD_PRO,
-                        contro_DESCRI,
-                        contro_DATA,
-                        contro_DATA_ENT,
-                        contro_DATA_SAIDA,
-                        contro_COD_FORNECEDOR,
-                        contro_RSOCIAL,
-                        contro_UNIDADE,
                         null,
-                        null};
-                if ((parentcad_funcionarioRowByFK__controle___cad_C__403A8C7D != null)) {
-                    columnValuesArray[9] = parentcad_funcionarioRowByFK__controle___cad_C__403A8C7D[0];
-                }
-                if ((parentcadastro_produtosRowByFK__controle___produ__412EB0B6 != null)) {
-                    columnValuesArray[10] = parentcadastro_produtosRowByFK__controle___produ__412EB0B6[0];
+                        contro_DATA_FABRICACAO,
+                        contro_DATA_VENCIMENTO,
+                        contro_UNIDADE,
+                        contro_QTD};
+                if ((parentcadastro_produtosRowByFK__controle___produ__6FE99F9F != null)) {
+                    columnValuesArray[1] = parentcadastro_produtosRowByFK__controle___produ__6FE99F9F[0];
                 }
                 rowcontrole_estoqueRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcontrole_estoqueRow);
@@ -2979,16 +2914,11 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columncontro_CD = base.Columns["contro_CD"];
-                this.columncontro_CD_PRO = base.Columns["contro_CD_PRO"];
-                this.columncontro_DESCRI = base.Columns["contro_DESCRI"];
-                this.columncontro_DATA = base.Columns["contro_DATA"];
-                this.columncontro_DATA_ENT = base.Columns["contro_DATA_ENT"];
-                this.columncontro_DATA_SAIDA = base.Columns["contro_DATA_SAIDA"];
-                this.columncontro_COD_FORNECEDOR = base.Columns["contro_COD_FORNECEDOR"];
-                this.columncontro_RSOCIAL = base.Columns["contro_RSOCIAL"];
-                this.columncontro_UNIDADE = base.Columns["contro_UNIDADE"];
-                this.columncad_CD = base.Columns["cad_CD"];
                 this.columnprodutos_cd = base.Columns["produtos_cd"];
+                this.columncontro_DATA_FABRICACAO = base.Columns["contro_DATA_FABRICACAO"];
+                this.columncontro_DATA_VENCIMENTO = base.Columns["contro_DATA_VENCIMENTO"];
+                this.columncontro_UNIDADE = base.Columns["contro_UNIDADE"];
+                this.columncontro_QTD = base.Columns["contro_QTD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2996,26 +2926,16 @@ namespace Projeto_Ração {
             private void InitClass() {
                 this.columncontro_CD = new global::System.Data.DataColumn("contro_CD", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncontro_CD);
-                this.columncontro_CD_PRO = new global::System.Data.DataColumn("contro_CD_PRO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_CD_PRO);
-                this.columncontro_DESCRI = new global::System.Data.DataColumn("contro_DESCRI", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_DESCRI);
-                this.columncontro_DATA = new global::System.Data.DataColumn("contro_DATA", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_DATA);
-                this.columncontro_DATA_ENT = new global::System.Data.DataColumn("contro_DATA_ENT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_DATA_ENT);
-                this.columncontro_DATA_SAIDA = new global::System.Data.DataColumn("contro_DATA_SAIDA", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_DATA_SAIDA);
-                this.columncontro_COD_FORNECEDOR = new global::System.Data.DataColumn("contro_COD_FORNECEDOR", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_COD_FORNECEDOR);
-                this.columncontro_RSOCIAL = new global::System.Data.DataColumn("contro_RSOCIAL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_RSOCIAL);
-                this.columncontro_UNIDADE = new global::System.Data.DataColumn("contro_UNIDADE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontro_UNIDADE);
-                this.columncad_CD = new global::System.Data.DataColumn("cad_CD", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncad_CD);
                 this.columnprodutos_cd = new global::System.Data.DataColumn("produtos_cd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprodutos_cd);
+                this.columncontro_DATA_FABRICACAO = new global::System.Data.DataColumn("contro_DATA_FABRICACAO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontro_DATA_FABRICACAO);
+                this.columncontro_DATA_VENCIMENTO = new global::System.Data.DataColumn("contro_DATA_VENCIMENTO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontro_DATA_VENCIMENTO);
+                this.columncontro_UNIDADE = new global::System.Data.DataColumn("contro_UNIDADE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontro_UNIDADE);
+                this.columncontro_QTD = new global::System.Data.DataColumn("contro_QTD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontro_QTD);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columncontro_CD}, true));
                 this.columncontro_CD.AutoIncrement = true;
@@ -3024,22 +2944,15 @@ namespace Projeto_Ração {
                 this.columncontro_CD.AllowDBNull = false;
                 this.columncontro_CD.ReadOnly = true;
                 this.columncontro_CD.Unique = true;
-                this.columncontro_CD_PRO.AllowDBNull = false;
-                this.columncontro_CD_PRO.MaxLength = 40;
-                this.columncontro_DESCRI.AllowDBNull = false;
-                this.columncontro_DESCRI.MaxLength = 40;
-                this.columncontro_DATA.AllowDBNull = false;
-                this.columncontro_DATA.MaxLength = 40;
-                this.columncontro_DATA_ENT.AllowDBNull = false;
-                this.columncontro_DATA_ENT.MaxLength = 40;
-                this.columncontro_DATA_SAIDA.AllowDBNull = false;
-                this.columncontro_DATA_SAIDA.MaxLength = 40;
-                this.columncontro_COD_FORNECEDOR.AllowDBNull = false;
-                this.columncontro_COD_FORNECEDOR.MaxLength = 40;
-                this.columncontro_RSOCIAL.AllowDBNull = false;
-                this.columncontro_RSOCIAL.MaxLength = 40;
+                this.columnprodutos_cd.AllowDBNull = false;
+                this.columncontro_DATA_FABRICACAO.AllowDBNull = false;
+                this.columncontro_DATA_FABRICACAO.MaxLength = 40;
+                this.columncontro_DATA_VENCIMENTO.AllowDBNull = false;
+                this.columncontro_DATA_VENCIMENTO.MaxLength = 40;
                 this.columncontro_UNIDADE.AllowDBNull = false;
                 this.columncontro_UNIDADE.MaxLength = 40;
+                this.columncontro_QTD.AllowDBNull = false;
+                this.columncontro_QTD.MaxLength = 40;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3627,17 +3540,6 @@ namespace Projeto_Ração {
                     return ((controle_caixaRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cad_C__5CD6CB2B"])));
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public controle_estoqueRow[] Getcontrole_estoqueRows() {
-                if ((this.Table.ChildRelations["FK__controle___cad_C__403A8C7D"] == null)) {
-                    return new controle_estoqueRow[0];
-                }
-                else {
-                    return ((controle_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___cad_C__403A8C7D"])));
-                }
-            }
         }
         
         /// <summary>
@@ -3929,11 +3831,11 @@ namespace Projeto_Ração {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public controle_estoqueRow[] Getcontrole_estoqueRows() {
-                if ((this.Table.ChildRelations["FK__controle___produ__412EB0B6"] == null)) {
+                if ((this.Table.ChildRelations["FK__controle___produ__6FE99F9F"] == null)) {
                     return new controle_estoqueRow[0];
                 }
                 else {
-                    return ((controle_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___produ__412EB0B6"])));
+                    return ((controle_estoqueRow[])(base.GetChildRows(this.Table.ChildRelations["FK__controle___produ__6FE99F9F"])));
                 }
             }
             
@@ -4244,78 +4146,34 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_CD_PRO {
+            public int produtos_cd {
                 get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_CD_PROColumn]));
+                    return ((int)(this[this.tablecontrole_estoque.produtos_cdColumn]));
                 }
                 set {
-                    this[this.tablecontrole_estoque.contro_CD_PROColumn] = value;
+                    this[this.tablecontrole_estoque.produtos_cdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_DESCRI {
+            public string contro_DATA_FABRICACAO {
                 get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_DESCRIColumn]));
+                    return ((string)(this[this.tablecontrole_estoque.contro_DATA_FABRICACAOColumn]));
                 }
                 set {
-                    this[this.tablecontrole_estoque.contro_DESCRIColumn] = value;
+                    this[this.tablecontrole_estoque.contro_DATA_FABRICACAOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_DATA {
+            public string contro_DATA_VENCIMENTO {
                 get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_DATAColumn]));
+                    return ((string)(this[this.tablecontrole_estoque.contro_DATA_VENCIMENTOColumn]));
                 }
                 set {
-                    this[this.tablecontrole_estoque.contro_DATAColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_DATA_ENT {
-                get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_DATA_ENTColumn]));
-                }
-                set {
-                    this[this.tablecontrole_estoque.contro_DATA_ENTColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_DATA_SAIDA {
-                get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_DATA_SAIDAColumn]));
-                }
-                set {
-                    this[this.tablecontrole_estoque.contro_DATA_SAIDAColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_COD_FORNECEDOR {
-                get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_COD_FORNECEDORColumn]));
-                }
-                set {
-                    this[this.tablecontrole_estoque.contro_COD_FORNECEDORColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string contro_RSOCIAL {
-                get {
-                    return ((string)(this[this.tablecontrole_estoque.contro_RSOCIALColumn]));
-                }
-                set {
-                    this[this.tablecontrole_estoque.contro_RSOCIALColumn] = value;
+                    this[this.tablecontrole_estoque.contro_DATA_VENCIMENTOColumn] = value;
                 }
             }
             
@@ -4332,44 +4190,12 @@ namespace Projeto_Ração {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int cad_CD {
+            public string contro_QTD {
                 get {
-                    try {
-                        return ((int)(this[this.tablecontrole_estoque.cad_CDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'cad_CD\' na tabela \'controle_estoque\' é DBNull.", e);
-                    }
+                    return ((string)(this[this.tablecontrole_estoque.contro_QTDColumn]));
                 }
                 set {
-                    this[this.tablecontrole_estoque.cad_CDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int produtos_cd {
-                get {
-                    try {
-                        return ((int)(this[this.tablecontrole_estoque.produtos_cdColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'produtos_cd\' na tabela \'controle_estoque\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablecontrole_estoque.produtos_cdColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public cad_funcionarioRow cad_funcionarioRow {
-                get {
-                    return ((cad_funcionarioRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___cad_C__403A8C7D"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___cad_C__403A8C7D"]);
+                    this[this.tablecontrole_estoque.contro_QTDColumn] = value;
                 }
             }
             
@@ -4377,35 +4203,11 @@ namespace Projeto_Ração {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public cadastro_produtosRow cadastro_produtosRow {
                 get {
-                    return ((cadastro_produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___produ__412EB0B6"])));
+                    return ((cadastro_produtosRow)(this.GetParentRow(this.Table.ParentRelations["FK__controle___produ__6FE99F9F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___produ__412EB0B6"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__controle___produ__6FE99F9F"]);
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Iscad_CDNull() {
-                return this.IsNull(this.tablecontrole_estoque.cad_CDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setcad_CDNull() {
-                this[this.tablecontrole_estoque.cad_CDColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isprodutos_cdNull() {
-                return this.IsNull(this.tablecontrole_estoque.produtos_cdColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setprodutos_cdNull() {
-                this[this.tablecontrole_estoque.produtos_cdColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -7834,77 +7636,48 @@ SELECT controle_cd, controle_abertura_caixa, controle_fechamento_caixa, controle
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "controle_estoque";
             tableMapping.ColumnMappings.Add("contro_CD", "contro_CD");
-            tableMapping.ColumnMappings.Add("contro_CD_PRO", "contro_CD_PRO");
-            tableMapping.ColumnMappings.Add("contro_DESCRI", "contro_DESCRI");
-            tableMapping.ColumnMappings.Add("contro_DATA", "contro_DATA");
-            tableMapping.ColumnMappings.Add("contro_DATA_ENT", "contro_DATA_ENT");
-            tableMapping.ColumnMappings.Add("contro_DATA_SAIDA", "contro_DATA_SAIDA");
-            tableMapping.ColumnMappings.Add("contro_COD_FORNECEDOR", "contro_COD_FORNECEDOR");
-            tableMapping.ColumnMappings.Add("contro_RSOCIAL", "contro_RSOCIAL");
-            tableMapping.ColumnMappings.Add("contro_UNIDADE", "contro_UNIDADE");
-            tableMapping.ColumnMappings.Add("cad_CD", "cad_CD");
             tableMapping.ColumnMappings.Add("produtos_cd", "produtos_cd");
+            tableMapping.ColumnMappings.Add("contro_DATA_FABRICACAO", "contro_DATA_FABRICACAO");
+            tableMapping.ColumnMappings.Add("contro_DATA_VENCIMENTO", "contro_DATA_VENCIMENTO");
+            tableMapping.ColumnMappings.Add("contro_UNIDADE", "contro_UNIDADE");
+            tableMapping.ColumnMappings.Add("contro_QTD", "contro_QTD");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[controle_estoque] WHERE (([contro_CD] = @Original_contro_CD) AND ([contro_CD_PRO] = @Original_contro_CD_PRO) AND ([contro_DESCRI] = @Original_contro_DESCRI) AND ([contro_DATA] = @Original_contro_DATA) AND ([contro_DATA_ENT] = @Original_contro_DATA_ENT) AND ([contro_DATA_SAIDA] = @Original_contro_DATA_SAIDA) AND ([contro_COD_FORNECEDOR] = @Original_contro_COD_FORNECEDOR) AND ([contro_RSOCIAL] = @Original_contro_RSOCIAL) AND ([contro_UNIDADE] = @Original_contro_UNIDADE) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[controle_estoque] WHERE (([contro_CD] = @Original_contro_CD) AND ([produtos_cd] = @Original_produtos_cd) AND ([contro_DATA_FABRICACAO] = @Original_contro_DATA_FABRICACAO) AND ([contro_DATA_VENCIMENTO] = @Original_contro_DATA_VENCIMENTO) AND ([contro_UNIDADE] = @Original_contro_UNIDADE) AND ([contro_QTD] = @Original_contro_QTD))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_CD_PRO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD_PRO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DESCRI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DESCRI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_ENT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_ENT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_SAIDA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_SAIDA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_COD_FORNECEDOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_COD_FORNECEDOR", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_RSOCIAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_RSOCIAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_FABRICACAO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_FABRICACAO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_VENCIMENTO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_VENCIMENTO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_QTD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_QTD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[controle_estoque] ([contro_CD_PRO], [contro_DESCRI], [contro_DATA], [contro_DATA_ENT], [contro_DATA_SAIDA], [contro_COD_FORNECEDOR], [contro_RSOCIAL], [contro_UNIDADE], [cad_CD], [produtos_cd]) VALUES (@contro_CD_PRO, @contro_DESCRI, @contro_DATA, @contro_DATA_ENT, @contro_DATA_SAIDA, @contro_COD_FORNECEDOR, @contro_RSOCIAL, @contro_UNIDADE, @cad_CD, @produtos_cd);
-SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, contro_DATA_SAIDA, contro_COD_FORNECEDOR, contro_RSOCIAL, contro_UNIDADE, cad_CD, produtos_cd FROM controle_estoque WHERE (contro_CD = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[controle_estoque] ([produtos_cd], [contro_DATA_FABRICACAO], [contro_DATA_VENCIMENTO], [contro_UNIDADE], [contro_QTD]) VALUES (@produtos_cd, @contro_DATA_FABRICACAO, @contro_DATA_VENCIMENTO, @contro_UNIDADE, @contro_QTD);
+SELECT contro_CD, produtos_cd, contro_DATA_FABRICACAO, contro_DATA_VENCIMENTO, contro_UNIDADE, contro_QTD FROM controle_estoque WHERE (contro_CD = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_CD_PRO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD_PRO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DESCRI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DESCRI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_ENT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_ENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_SAIDA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_SAIDA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_COD_FORNECEDOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_COD_FORNECEDOR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_RSOCIAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_RSOCIAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_FABRICACAO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_FABRICACAO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_VENCIMENTO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_VENCIMENTO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_QTD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_QTD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[controle_estoque] SET [contro_CD_PRO] = @contro_CD_PRO, [contro_DESCRI] = @contro_DESCRI, [contro_DATA] = @contro_DATA, [contro_DATA_ENT] = @contro_DATA_ENT, [contro_DATA_SAIDA] = @contro_DATA_SAIDA, [contro_COD_FORNECEDOR] = @contro_COD_FORNECEDOR, [contro_RSOCIAL] = @contro_RSOCIAL, [contro_UNIDADE] = @contro_UNIDADE, [cad_CD] = @cad_CD, [produtos_cd] = @produtos_cd WHERE (([contro_CD] = @Original_contro_CD) AND ([contro_CD_PRO] = @Original_contro_CD_PRO) AND ([contro_DESCRI] = @Original_contro_DESCRI) AND ([contro_DATA] = @Original_contro_DATA) AND ([contro_DATA_ENT] = @Original_contro_DATA_ENT) AND ([contro_DATA_SAIDA] = @Original_contro_DATA_SAIDA) AND ([contro_COD_FORNECEDOR] = @Original_contro_COD_FORNECEDOR) AND ([contro_RSOCIAL] = @Original_contro_RSOCIAL) AND ([contro_UNIDADE] = @Original_contro_UNIDADE) AND ((@IsNull_cad_CD = 1 AND [cad_CD] IS NULL) OR ([cad_CD] = @Original_cad_CD)) AND ((@IsNull_produtos_cd = 1 AND [produtos_cd] IS NULL) OR ([produtos_cd] = @Original_produtos_cd)));
-SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, contro_DATA_SAIDA, contro_COD_FORNECEDOR, contro_RSOCIAL, contro_UNIDADE, cad_CD, produtos_cd FROM controle_estoque WHERE (contro_CD = @contro_CD)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[controle_estoque] SET [produtos_cd] = @produtos_cd, [contro_DATA_FABRICACAO] = @contro_DATA_FABRICACAO, [contro_DATA_VENCIMENTO] = @contro_DATA_VENCIMENTO, [contro_UNIDADE] = @contro_UNIDADE, [contro_QTD] = @contro_QTD WHERE (([contro_CD] = @Original_contro_CD) AND ([produtos_cd] = @Original_produtos_cd) AND ([contro_DATA_FABRICACAO] = @Original_contro_DATA_FABRICACAO) AND ([contro_DATA_VENCIMENTO] = @Original_contro_DATA_VENCIMENTO) AND ([contro_UNIDADE] = @Original_contro_UNIDADE) AND ([contro_QTD] = @Original_contro_QTD));
+SELECT contro_CD, produtos_cd, contro_DATA_FABRICACAO, contro_DATA_VENCIMENTO, contro_UNIDADE, contro_QTD FROM controle_estoque WHERE (contro_CD = @contro_CD)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_CD_PRO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD_PRO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DESCRI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DESCRI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_ENT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_ENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_SAIDA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_SAIDA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_COD_FORNECEDOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_COD_FORNECEDOR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_RSOCIAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_RSOCIAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_FABRICACAO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_FABRICACAO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_DATA_VENCIMENTO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_VENCIMENTO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_QTD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_QTD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_CD_PRO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD_PRO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DESCRI", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DESCRI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_ENT", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_ENT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_SAIDA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_SAIDA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_COD_FORNECEDOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_COD_FORNECEDOR", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_RSOCIAL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_RSOCIAL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cad_CD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cad_CD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_produtos_cd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "produtos_cd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_FABRICACAO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_FABRICACAO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_DATA_VENCIMENTO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_DATA_VENCIMENTO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_UNIDADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_UNIDADE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contro_QTD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contro_QTD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contro_CD", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "contro_CD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -7921,9 +7694,8 @@ SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, co
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, con" +
-                "tro_DATA_SAIDA, contro_COD_FORNECEDOR, contro_RSOCIAL, contro_UNIDADE, cad_CD, p" +
-                "rodutos_cd FROM dbo.controle_estoque";
+            this._commandCollection[0].CommandText = "SELECT contro_CD, produtos_cd, contro_DATA_FABRICACAO, contro_DATA_VENCIMENTO, co" +
+                "ntro_UNIDADE, contro_QTD FROM dbo.controle_estoque";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7984,71 +7756,32 @@ SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_contro_CD, string Original_contro_CD_PRO, string Original_contro_DESCRI, string Original_contro_DATA, string Original_contro_DATA_ENT, string Original_contro_DATA_SAIDA, string Original_contro_COD_FORNECEDOR, string Original_contro_RSOCIAL, string Original_contro_UNIDADE, global::System.Nullable<int> Original_cad_CD, global::System.Nullable<int> Original_produtos_cd) {
+        public virtual int Delete(int Original_contro_CD, int Original_produtos_cd, string Original_contro_DATA_FABRICACAO, string Original_contro_DATA_VENCIMENTO, string Original_contro_UNIDADE, string Original_contro_QTD) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_contro_CD));
-            if ((Original_contro_CD_PRO == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_CD_PRO");
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_produtos_cd));
+            if ((Original_contro_DATA_FABRICACAO == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_DATA_FABRICACAO");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_contro_CD_PRO));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_contro_DATA_FABRICACAO));
             }
-            if ((Original_contro_DESCRI == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DESCRI");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_contro_DESCRI));
-            }
-            if ((Original_contro_DATA == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA");
+            if ((Original_contro_DATA_VENCIMENTO == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_DATA_VENCIMENTO");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_contro_DATA));
-            }
-            if ((Original_contro_DATA_ENT == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA_ENT");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_contro_DATA_ENT));
-            }
-            if ((Original_contro_DATA_SAIDA == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA_SAIDA");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_contro_DATA_SAIDA));
-            }
-            if ((Original_contro_COD_FORNECEDOR == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_COD_FORNECEDOR");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_contro_COD_FORNECEDOR));
-            }
-            if ((Original_contro_RSOCIAL == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_RSOCIAL");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_contro_RSOCIAL));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_contro_DATA_VENCIMENTO));
             }
             if ((Original_contro_UNIDADE == null)) {
                 throw new global::System.ArgumentNullException("Original_contro_UNIDADE");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_contro_UNIDADE));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_contro_UNIDADE));
             }
-            if ((Original_cad_CD.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_cad_CD.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((Original_produtos_cd.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_produtos_cd.Value));
+            if ((Original_contro_QTD == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_QTD");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_contro_QTD));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8070,66 +7803,31 @@ SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string contro_CD_PRO, string contro_DESCRI, string contro_DATA, string contro_DATA_ENT, string contro_DATA_SAIDA, string contro_COD_FORNECEDOR, string contro_RSOCIAL, string contro_UNIDADE, global::System.Nullable<int> cad_CD, global::System.Nullable<int> produtos_cd) {
-            if ((contro_CD_PRO == null)) {
-                throw new global::System.ArgumentNullException("contro_CD_PRO");
+        public virtual int Insert(int produtos_cd, string contro_DATA_FABRICACAO, string contro_DATA_VENCIMENTO, string contro_UNIDADE, string contro_QTD) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(produtos_cd));
+            if ((contro_DATA_FABRICACAO == null)) {
+                throw new global::System.ArgumentNullException("contro_DATA_FABRICACAO");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(contro_CD_PRO));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(contro_DATA_FABRICACAO));
             }
-            if ((contro_DESCRI == null)) {
-                throw new global::System.ArgumentNullException("contro_DESCRI");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(contro_DESCRI));
-            }
-            if ((contro_DATA == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA");
+            if ((contro_DATA_VENCIMENTO == null)) {
+                throw new global::System.ArgumentNullException("contro_DATA_VENCIMENTO");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(contro_DATA));
-            }
-            if ((contro_DATA_ENT == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA_ENT");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(contro_DATA_ENT));
-            }
-            if ((contro_DATA_SAIDA == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA_SAIDA");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(contro_DATA_SAIDA));
-            }
-            if ((contro_COD_FORNECEDOR == null)) {
-                throw new global::System.ArgumentNullException("contro_COD_FORNECEDOR");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(contro_COD_FORNECEDOR));
-            }
-            if ((contro_RSOCIAL == null)) {
-                throw new global::System.ArgumentNullException("contro_RSOCIAL");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(contro_RSOCIAL));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(contro_DATA_VENCIMENTO));
             }
             if ((contro_UNIDADE == null)) {
                 throw new global::System.ArgumentNullException("contro_UNIDADE");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(contro_UNIDADE));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(contro_UNIDADE));
             }
-            if ((cad_CD.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(cad_CD.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            if ((produtos_cd.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((int)(produtos_cd.Value));
+            if ((contro_QTD == null)) {
+                throw new global::System.ArgumentNullException("contro_QTD");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(contro_QTD));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8151,155 +7849,59 @@ SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string contro_CD_PRO, 
-                    string contro_DESCRI, 
-                    string contro_DATA, 
-                    string contro_DATA_ENT, 
-                    string contro_DATA_SAIDA, 
-                    string contro_COD_FORNECEDOR, 
-                    string contro_RSOCIAL, 
-                    string contro_UNIDADE, 
-                    global::System.Nullable<int> cad_CD, 
-                    global::System.Nullable<int> produtos_cd, 
-                    int Original_contro_CD, 
-                    string Original_contro_CD_PRO, 
-                    string Original_contro_DESCRI, 
-                    string Original_contro_DATA, 
-                    string Original_contro_DATA_ENT, 
-                    string Original_contro_DATA_SAIDA, 
-                    string Original_contro_COD_FORNECEDOR, 
-                    string Original_contro_RSOCIAL, 
-                    string Original_contro_UNIDADE, 
-                    global::System.Nullable<int> Original_cad_CD, 
-                    global::System.Nullable<int> Original_produtos_cd, 
-                    int contro_CD) {
-            if ((contro_CD_PRO == null)) {
-                throw new global::System.ArgumentNullException("contro_CD_PRO");
+        public virtual int Update(int produtos_cd, string contro_DATA_FABRICACAO, string contro_DATA_VENCIMENTO, string contro_UNIDADE, string contro_QTD, int Original_contro_CD, int Original_produtos_cd, string Original_contro_DATA_FABRICACAO, string Original_contro_DATA_VENCIMENTO, string Original_contro_UNIDADE, string Original_contro_QTD, int contro_CD) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(produtos_cd));
+            if ((contro_DATA_FABRICACAO == null)) {
+                throw new global::System.ArgumentNullException("contro_DATA_FABRICACAO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(contro_CD_PRO));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(contro_DATA_FABRICACAO));
             }
-            if ((contro_DESCRI == null)) {
-                throw new global::System.ArgumentNullException("contro_DESCRI");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(contro_DESCRI));
-            }
-            if ((contro_DATA == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA");
+            if ((contro_DATA_VENCIMENTO == null)) {
+                throw new global::System.ArgumentNullException("contro_DATA_VENCIMENTO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(contro_DATA));
-            }
-            if ((contro_DATA_ENT == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA_ENT");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(contro_DATA_ENT));
-            }
-            if ((contro_DATA_SAIDA == null)) {
-                throw new global::System.ArgumentNullException("contro_DATA_SAIDA");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(contro_DATA_SAIDA));
-            }
-            if ((contro_COD_FORNECEDOR == null)) {
-                throw new global::System.ArgumentNullException("contro_COD_FORNECEDOR");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(contro_COD_FORNECEDOR));
-            }
-            if ((contro_RSOCIAL == null)) {
-                throw new global::System.ArgumentNullException("contro_RSOCIAL");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(contro_RSOCIAL));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(contro_DATA_VENCIMENTO));
             }
             if ((contro_UNIDADE == null)) {
                 throw new global::System.ArgumentNullException("contro_UNIDADE");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(contro_UNIDADE));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(contro_UNIDADE));
             }
-            if ((cad_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(cad_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            if ((produtos_cd.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(produtos_cd.Value));
+            if ((contro_QTD == null)) {
+                throw new global::System.ArgumentNullException("contro_QTD");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(contro_QTD));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_contro_CD));
-            if ((Original_contro_CD_PRO == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_CD_PRO");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_contro_CD_PRO));
-            }
-            if ((Original_contro_DESCRI == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DESCRI");
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_contro_CD));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_produtos_cd));
+            if ((Original_contro_DATA_FABRICACAO == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_DATA_FABRICACAO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_contro_DESCRI));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_contro_DATA_FABRICACAO));
             }
-            if ((Original_contro_DATA == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_contro_DATA));
-            }
-            if ((Original_contro_DATA_ENT == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA_ENT");
+            if ((Original_contro_DATA_VENCIMENTO == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_DATA_VENCIMENTO");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_contro_DATA_ENT));
-            }
-            if ((Original_contro_DATA_SAIDA == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_DATA_SAIDA");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_contro_DATA_SAIDA));
-            }
-            if ((Original_contro_COD_FORNECEDOR == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_COD_FORNECEDOR");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_contro_COD_FORNECEDOR));
-            }
-            if ((Original_contro_RSOCIAL == null)) {
-                throw new global::System.ArgumentNullException("Original_contro_RSOCIAL");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_contro_RSOCIAL));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_contro_DATA_VENCIMENTO));
             }
             if ((Original_contro_UNIDADE == null)) {
                 throw new global::System.ArgumentNullException("Original_contro_UNIDADE");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_contro_UNIDADE));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_contro_UNIDADE));
             }
-            if ((Original_cad_CD.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_cad_CD.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
-            }
-            if ((Original_produtos_cd.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Original_produtos_cd.Value));
+            if ((Original_contro_QTD == null)) {
+                throw new global::System.ArgumentNullException("Original_contro_QTD");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_contro_QTD));
             }
-            this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(contro_CD));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(contro_CD));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -8320,29 +7922,8 @@ SELECT contro_CD, contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string contro_CD_PRO, 
-                    string contro_DESCRI, 
-                    string contro_DATA, 
-                    string contro_DATA_ENT, 
-                    string contro_DATA_SAIDA, 
-                    string contro_COD_FORNECEDOR, 
-                    string contro_RSOCIAL, 
-                    string contro_UNIDADE, 
-                    global::System.Nullable<int> cad_CD, 
-                    global::System.Nullable<int> produtos_cd, 
-                    int Original_contro_CD, 
-                    string Original_contro_CD_PRO, 
-                    string Original_contro_DESCRI, 
-                    string Original_contro_DATA, 
-                    string Original_contro_DATA_ENT, 
-                    string Original_contro_DATA_SAIDA, 
-                    string Original_contro_COD_FORNECEDOR, 
-                    string Original_contro_RSOCIAL, 
-                    string Original_contro_UNIDADE, 
-                    global::System.Nullable<int> Original_cad_CD, 
-                    global::System.Nullable<int> Original_produtos_cd) {
-            return this.Update(contro_CD_PRO, contro_DESCRI, contro_DATA, contro_DATA_ENT, contro_DATA_SAIDA, contro_COD_FORNECEDOR, contro_RSOCIAL, contro_UNIDADE, cad_CD, produtos_cd, Original_contro_CD, Original_contro_CD_PRO, Original_contro_DESCRI, Original_contro_DATA, Original_contro_DATA_ENT, Original_contro_DATA_SAIDA, Original_contro_COD_FORNECEDOR, Original_contro_RSOCIAL, Original_contro_UNIDADE, Original_cad_CD, Original_produtos_cd, Original_contro_CD);
+        public virtual int Update(int produtos_cd, string contro_DATA_FABRICACAO, string contro_DATA_VENCIMENTO, string contro_UNIDADE, string contro_QTD, int Original_contro_CD, int Original_produtos_cd, string Original_contro_DATA_FABRICACAO, string Original_contro_DATA_VENCIMENTO, string Original_contro_UNIDADE, string Original_contro_QTD) {
+            return this.Update(produtos_cd, contro_DATA_FABRICACAO, contro_DATA_VENCIMENTO, contro_UNIDADE, contro_QTD, Original_contro_CD, Original_produtos_cd, Original_contro_DATA_FABRICACAO, Original_contro_DATA_VENCIMENTO, Original_contro_UNIDADE, Original_contro_QTD, Original_contro_CD);
         }
     }
     

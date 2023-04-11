@@ -50,7 +50,12 @@ namespace Projeto_Ração
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Validate();
+            if (textBox1.Text.Length == 0 && textBox2.Text.Length == 0)
+            {
+                MessageBox.Show("Entre com os dados");
+            }
+            else
+                this.Validate();
             cadastroclienteBindingSource.EndEdit();
             cadastro_clienteTableAdapter.Update(racaodovaleDataSet.cadastro_cliente);
             this.cadastro_clienteTableAdapter.Fill(this.racaodovaleDataSet.cadastro_cliente);

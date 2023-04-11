@@ -57,11 +57,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
@@ -128,9 +128,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(19, 215);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 13);
+            this.label7.Size = new System.Drawing.Size(60, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "RAZAO SOCIAL";
+            this.label7.Text = "quantidade";
             // 
             // label8
             // 
@@ -307,6 +307,11 @@
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 26;
             // 
+            // cadastroprodutosBindingSource
+            // 
+            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
+            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
             // textBox10
             // 
             this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.controleestoqueBindingSource, "contro_CD_PRO", true));
@@ -341,11 +346,6 @@
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 30;
             this.label12.Text = "label12";
-            // 
-            // cadastroprodutosBindingSource
-            // 
-            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
-            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
             // 
             // cadastro_produtosTableAdapter
             // 

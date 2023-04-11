@@ -46,19 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Backup.Designer.cs">
-      <DependentUpon>Backup.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadCaixa.Designer.cs">
       <DependentUpon>CadCaixa.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadControle.Designer.cs">
+      <DependentUpon>CadControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caixasoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caixasoma.Designer.cs">
+      <DependentUpon>caixasoma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="ClassConexao.cs" />
+    <Compile Include="ClassUser.cs" />
     <Compile Include="CONTAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +121,12 @@
     <Compile Include="FrmAltPromocao.Designer.cs">
       <DependentUpon>FrmAltPromocao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBackupRest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackupRest.Designer.cs">
+      <DependentUpon>frmBackupRest.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPesCaixa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +138,12 @@
     </Compile>
     <Compile Include="FrmPesCliente.Designer.cs">
       <DependentUpon>FrmPesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesContas.Designer.cs">
+      <DependentUpon>FrmPesContas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPesFornecedor.cs">
       <SubType>Form</SubType>
@@ -154,6 +174,12 @@
     </Compile>
     <Compile Include="FrmPessEstoque.Designer.cs">
       <DependentUpon>FrmPessEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuP.Designer.cs">
+      <DependentUpon>MenuP.cs</DependentUpon>
     </Compile>
     <Compile Include="produto.cs">
       <SubType>Form</SubType>
@@ -210,11 +236,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Backup.resx">
-      <DependentUpon>Backup.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadCaixa.resx">
       <DependentUpon>CadCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadControle.resx">
+      <DependentUpon>CadControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caixasoma.resx">
+      <DependentUpon>caixasoma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CONTAS.resx">
       <DependentUpon>CONTAS.cs</DependentUpon>
@@ -243,11 +272,17 @@
     <EmbeddedResource Include="FrmAltPromocao.resx">
       <DependentUpon>FrmAltPromocao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBackupRest.resx">
+      <DependentUpon>frmBackupRest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPesCaixa.resx">
       <DependentUpon>FrmPesCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPesCliente.resx">
       <DependentUpon>FrmPesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesContas.resx">
+      <DependentUpon>FrmPesContas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPesFornecedor.resx">
       <DependentUpon>FrmPesFornecedor.cs</DependentUpon>
@@ -279,6 +314,9 @@
     <EmbeddedResource Include="CadFornece.resx">
       <DependentUpon>CadFornece.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuP.resx">
+      <DependentUpon>MenuP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="produto.resx">
       <DependentUpon>produto.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +345,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="RacaodovaleDataSet.xsc">
       <DependentUpon>RacaodovaleDataSet.xsd</DependentUpon>
     </None>
@@ -318,11 +361,6 @@
     <None Include="RacaodovaleDataSet.xss">
       <DependentUpon>RacaodovaleDataSet.xsd</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pexels-cottonbro-studio-5474282.jpg" />
   </ItemGroup>
   <ItemGroup>

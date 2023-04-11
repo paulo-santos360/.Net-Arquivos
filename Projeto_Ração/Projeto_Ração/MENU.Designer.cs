@@ -37,10 +37,9 @@
             this.controleDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONTROLEDECAIXAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cAIXASOMAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -52,10 +51,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroDeFunciorarioToolStripMenuItem,
             this.controleDeCaixaToolStripMenuItem,
-            this.cadastroToolStripMenuItem,
             this.contrToolStripMenuItem,
             this.backupToolStripMenuItem,
-            this.restoreToolStripMenuItem});
+            this.cAIXASOMAToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -130,14 +128,6 @@
             this.cONTROLEDECAIXAToolStripMenuItem1.Text = "CONTROLE DE CAIXA";
             this.cONTROLEDECAIXAToolStripMenuItem1.Click += new System.EventHandler(this.cONTROLEDECAIXAToolStripMenuItem1_Click);
             // 
-            // cadastroToolStripMenuItem
-            // 
-            this.cadastroToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(234, 36);
-            this.cadastroToolStripMenuItem.Text = "PROMOÇÃO DE PRODUTOS";
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
-            // 
             // contrToolStripMenuItem
             // 
             this.contrToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,15 +140,17 @@
             // 
             this.backupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(112, 36);
-            this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(215, 36);
+            this.backupToolStripMenuItem.Text = "Backup$Restore";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
-            // restoreToolStripMenuItem
+            // cAIXASOMAToolStripMenuItem
             // 
-            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
-            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
-            this.restoreToolStripMenuItem.Text = "Restore";
+            this.cAIXASOMAToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cAIXASOMAToolStripMenuItem.Name = "cAIXASOMAToolStripMenuItem";
+            this.cAIXASOMAToolStripMenuItem.Size = new System.Drawing.Size(97, 36);
+            this.cAIXASOMAToolStripMenuItem.Text = "CAIXA SOMA";
+            this.cAIXASOMAToolStripMenuItem.Click += new System.EventHandler(this.cAIXASOMAToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -208,10 +200,8 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroDeFunciorarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeCaixaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contrToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem restoreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadFuncionarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadFornecedorToolStripMenuItem;
@@ -219,5 +209,6 @@
         private System.Windows.Forms.ToolStripMenuItem cONTROLEDECAIXAToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem cAIXASOMAToolStripMenuItem;
     }
 }

@@ -5,7 +5,32 @@
       "ProjectGuid": "13c2668b-5c54-42ce-8b36-062e3c7de262",
       "DisplayName": "Projeto_Ração",
       "ColorIndex": 0
+    },
+    "5f068d97-f3b3-4889-afaa-cc4fa2827c6e": {
+      "ProjectGuid": "5f068d97-f3b3-4889-afaa-cc4fa2827c6e",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    },
+    "e644395f-2cc6-413f-b16c-30ade69bf15f": {
+      "ProjectGuid": "e644395f-2cc6-413f-b16c-30ade69bf15f",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
+    },
+    "1bd378a5-9bae-4be5-a75e-fef6fd91205c": {
+      "ProjectGuid": "1bd378a5-9bae-4be5-a75e-fef6fd91205c",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 3
+    },
+    "58b2ed4a-a9a7-423d-b1a3-7f901d862198": {
+      "ProjectGuid": "58b2ed4a-a9a7-423d-b1a3-7f901d862198",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 4
+    },
+    "9ef64e1f-ee8e-4ae4-a80d-4046589a4dd2": {
+      "ProjectGuid": "9ef64e1f-ee8e-4ae4-a80d-4046589a4dd2",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 6
 }

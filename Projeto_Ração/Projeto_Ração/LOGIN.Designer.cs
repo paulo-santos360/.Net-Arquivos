@@ -62,7 +62,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_USUARIO", true));
             this.textBox1.Location = new System.Drawing.Point(12, 59);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -81,7 +80,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_SENHA", true));
             this.textBox2.Location = new System.Drawing.Point(12, 146);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -107,7 +105,6 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_CARGO", true));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(12, 238);
             this.comboBox1.Name = "comboBox1";
@@ -145,7 +142,7 @@
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_USUARIO", true));
-            this.textBox3.Location = new System.Drawing.Point(169, 59);
+            this.textBox3.Location = new System.Drawing.Point(865, 43);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 10;
@@ -153,7 +150,7 @@
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_SENHA", true));
-            this.textBox4.Location = new System.Drawing.Point(169, 146);
+            this.textBox4.Location = new System.Drawing.Point(865, 127);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 11;
@@ -162,7 +159,7 @@
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadfuncionarioBindingSource, "cad_CARGO", true));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(169, 238);
+            this.comboBox2.Location = new System.Drawing.Point(865, 196);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 13;
@@ -185,6 +182,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.OrangeRed;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.Account_Login_Button_PNG_Clipart;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -197,7 +195,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(792, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox4);
@@ -212,7 +211,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "LOGIN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
