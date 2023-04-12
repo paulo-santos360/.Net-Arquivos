@@ -74,7 +74,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 150);
             this.dataGridView1.TabIndex = 21;
             // 
             // cadastroCDDataGridViewTextBoxColumn

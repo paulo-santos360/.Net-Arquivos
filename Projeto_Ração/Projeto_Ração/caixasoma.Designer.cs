@@ -75,7 +75,7 @@
             // Produtos
             // 
             this.Produtos.FormattingEnabled = true;
-            this.Produtos.Location = new System.Drawing.Point(562, 28);
+            this.Produtos.Location = new System.Drawing.Point(308, 12);
             this.Produtos.Name = "Produtos";
             this.Produtos.Size = new System.Drawing.Size(120, 95);
             this.Produtos.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(561, 206);
+            this.textBox2.Location = new System.Drawing.Point(460, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 88);
@@ -113,10 +113,10 @@
             this.produtosvalorcompraDataGridViewTextBoxColumn,
             this.produtosvalorvendaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cadastroprodutosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(514, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(633, 207);
             this.dataGridView1.TabIndex = 5;
             // 
             // produtoscdDataGridViewTextBoxColumn
@@ -188,6 +188,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Remover";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 

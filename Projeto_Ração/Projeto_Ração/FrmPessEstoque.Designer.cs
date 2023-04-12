@@ -31,15 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.controCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controCDPRODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controDESCRIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controDATADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controDATAENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controDATASAIDADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controCODFORNECEDORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controRSOCIALDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controUNIDADEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cadCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtoscdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
@@ -68,21 +60,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.controCDDataGridViewTextBoxColumn,
-            this.controCDPRODataGridViewTextBoxColumn,
-            this.controDESCRIDataGridViewTextBoxColumn,
-            this.controDATADataGridViewTextBoxColumn,
-            this.controDATAENTDataGridViewTextBoxColumn,
-            this.controDATASAIDADataGridViewTextBoxColumn,
-            this.controCODFORNECEDORDataGridViewTextBoxColumn,
-            this.controRSOCIALDataGridViewTextBoxColumn,
             this.controUNIDADEDataGridViewTextBoxColumn,
-            this.cadCDDataGridViewTextBoxColumn,
             this.produtoscdDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.controleestoqueBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(3, 301);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(688, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(341, 150);
             this.dataGridView1.TabIndex = 43;
             // 
             // controCDDataGridViewTextBoxColumn
@@ -92,59 +76,11 @@
             this.controCDDataGridViewTextBoxColumn.Name = "controCDDataGridViewTextBoxColumn";
             this.controCDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // controCDPRODataGridViewTextBoxColumn
-            // 
-            this.controCDPRODataGridViewTextBoxColumn.DataPropertyName = "contro_CD_PRO";
-            this.controCDPRODataGridViewTextBoxColumn.HeaderText = "contro_CD_PRO";
-            this.controCDPRODataGridViewTextBoxColumn.Name = "controCDPRODataGridViewTextBoxColumn";
-            // 
-            // controDESCRIDataGridViewTextBoxColumn
-            // 
-            this.controDESCRIDataGridViewTextBoxColumn.DataPropertyName = "contro_DESCRI";
-            this.controDESCRIDataGridViewTextBoxColumn.HeaderText = "contro_DESCRI";
-            this.controDESCRIDataGridViewTextBoxColumn.Name = "controDESCRIDataGridViewTextBoxColumn";
-            // 
-            // controDATADataGridViewTextBoxColumn
-            // 
-            this.controDATADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA";
-            this.controDATADataGridViewTextBoxColumn.HeaderText = "contro_DATA";
-            this.controDATADataGridViewTextBoxColumn.Name = "controDATADataGridViewTextBoxColumn";
-            // 
-            // controDATAENTDataGridViewTextBoxColumn
-            // 
-            this.controDATAENTDataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_ENT";
-            this.controDATAENTDataGridViewTextBoxColumn.HeaderText = "contro_DATA_ENT";
-            this.controDATAENTDataGridViewTextBoxColumn.Name = "controDATAENTDataGridViewTextBoxColumn";
-            // 
-            // controDATASAIDADataGridViewTextBoxColumn
-            // 
-            this.controDATASAIDADataGridViewTextBoxColumn.DataPropertyName = "contro_DATA_SAIDA";
-            this.controDATASAIDADataGridViewTextBoxColumn.HeaderText = "contro_DATA_SAIDA";
-            this.controDATASAIDADataGridViewTextBoxColumn.Name = "controDATASAIDADataGridViewTextBoxColumn";
-            // 
-            // controCODFORNECEDORDataGridViewTextBoxColumn
-            // 
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.DataPropertyName = "contro_COD_FORNECEDOR";
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.HeaderText = "contro_COD_FORNECEDOR";
-            this.controCODFORNECEDORDataGridViewTextBoxColumn.Name = "controCODFORNECEDORDataGridViewTextBoxColumn";
-            // 
-            // controRSOCIALDataGridViewTextBoxColumn
-            // 
-            this.controRSOCIALDataGridViewTextBoxColumn.DataPropertyName = "contro_RSOCIAL";
-            this.controRSOCIALDataGridViewTextBoxColumn.HeaderText = "contro_RSOCIAL";
-            this.controRSOCIALDataGridViewTextBoxColumn.Name = "controRSOCIALDataGridViewTextBoxColumn";
-            // 
             // controUNIDADEDataGridViewTextBoxColumn
             // 
             this.controUNIDADEDataGridViewTextBoxColumn.DataPropertyName = "contro_UNIDADE";
             this.controUNIDADEDataGridViewTextBoxColumn.HeaderText = "contro_UNIDADE";
             this.controUNIDADEDataGridViewTextBoxColumn.Name = "controUNIDADEDataGridViewTextBoxColumn";
-            // 
-            // cadCDDataGridViewTextBoxColumn
-            // 
-            this.cadCDDataGridViewTextBoxColumn.DataPropertyName = "cad_CD";
-            this.cadCDDataGridViewTextBoxColumn.HeaderText = "cad_CD";
-            this.cadCDDataGridViewTextBoxColumn.Name = "cadCDDataGridViewTextBoxColumn";
             // 
             // produtoscdDataGridViewTextBoxColumn
             // 

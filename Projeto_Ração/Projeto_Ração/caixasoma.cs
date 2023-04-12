@@ -80,5 +80,52 @@ namespace Projeto_Ração
             this.Hide();
             colaba.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Produtos.Items.Count > 0)
+            {
+                string pesquisa = textBox1.Text;
+                foreach (DataGridViewRow row in
+                    dataGridView1.SelectedRows)
+                {
+                    if (row.Cells[0].Value.ToString().Contains(pesquisa))
+                    {
+                        Produtos.Items.Remove(row.Cells[1].Value.ToString()
+                        + " | " +
+                        row.Cells[2].Value.ToString()
+                        + " | R$ " +
+                        row.Cells[5].Value.ToString()
+                            );
+
+
+
+                        listBox1.Items.Remove(row.Cells[5].Value.ToString());
+                        double valorTotal = 0.0;
+
+                        foreach (string v in listBox1.Items)
+                        {
+                            double dv = Double.Parse(v);
+                            valorTotal += dv;
+                        }
+                        textBox2.Text = "Valor total: " + valorTotal.ToString();
+
+                        break;
+
+                    }
+
+
+                }
+                MessageBox.Show("O item foi removido com sucesso", "Remoção de item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show("O carrinho está vazio, nada para tirar", "Erro no caixa", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+        }
     }
 }

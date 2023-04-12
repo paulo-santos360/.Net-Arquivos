@@ -16,5 +16,49 @@ namespace Projeto_Ração
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (Control controle in this.Controls)
+            {
+                if (controle is TextBox)
+                {
+                    TextBox textBox = (TextBox)controle;
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CONTAS colabh = new CONTAS();
+            this.Hide();
+            colabh.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //string codigo;
+                //codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                contasBindingSource.RemoveCurrent();
+                contasTableAdapter.Update(racaodovaleDataSet.contas); //salvar
+                this.contasTableAdapter.Fill(this.racaodovaleDataSet.contas);
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Não foi possível excluir registro.\n" + erro.Message.ToString());
+                //throw;
+            }
+        }
+
+        private void FrmPesContas_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'racaodovaleDataSet.contas'. Você pode movê-la ou removê-la conforme necessário.
+            this.contasTableAdapter.Fill(this.racaodovaleDataSet.contas);
+
+        }
     }
 }

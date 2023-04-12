@@ -10,7 +10,6 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmAltCaixa.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmAltClient.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmAltProduto.resources
-C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmAltPromocao.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.frmBackupRest.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmPesCaixa.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmPesCliente.resources
@@ -24,7 +23,6 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CadFunc.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.CadCliente.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmCadFornecedor.resources
-C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.MenuP.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.produto.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.PROMOCAO.resources
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.Properties.Resources.resources
@@ -36,5 +34,5 @@ C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\bin\Debug\
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\bin\Debug\Projeto_Ração.pdb
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.exe
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.pdb
-C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.csproj.AssemblyReference.cache
 C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.FrmPesContas.resources
+C:\Users\paulo.asantos16\source\repos\Projeto_Ração\Projeto_Ração\obj\Debug\Projeto_Ração.csproj.AssemblyReference.cache

@@ -37,8 +37,8 @@
             this.controleestoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -119,6 +119,11 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 5;
             // 
+            // cadastroprodutosBindingSource
+            // 
+            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
+            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroprodutosBindingSource, "produtos_desc", true));
@@ -126,11 +131,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
-            // 
-            // cadastroprodutosBindingSource
-            // 
-            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
-            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
             // 
             // label4
             // 

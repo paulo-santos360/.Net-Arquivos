@@ -16,7 +16,7 @@ namespace Projeto_Ração
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MENU());
+            Application.Run(new SPLASH());
         }
     }
 }

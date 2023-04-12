@@ -51,10 +51,7 @@ namespace Projeto_Ração
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Class1.codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            this.Visible = false;
-            FrmAltPromocao newAlterar = new FrmAltPromocao();
-            newAlterar.ShowDialog();
+           
 
         }
 

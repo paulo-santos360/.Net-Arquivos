@@ -166,7 +166,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(683, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(744, 150);
             this.dataGridView1.TabIndex = 10;
             // 
             // fornCDDataGridViewTextBoxColumn
@@ -240,9 +240,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Projeto_Ração.Properties.Resources.fornecedores;
-            this.pictureBox1.Location = new System.Drawing.Point(264, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(534, 435);
+            this.pictureBox1.Size = new System.Drawing.Size(534, 314);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
