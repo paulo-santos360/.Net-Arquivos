@@ -56,6 +56,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -227,7 +228,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 302);
+            this.button1.Location = new System.Drawing.Point(27, 288);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 18;
@@ -237,7 +238,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(164, 302);
+            this.button3.Location = new System.Drawing.Point(136, 288);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 20;
@@ -251,7 +252,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(164, 346);
+            this.button5.Location = new System.Drawing.Point(136, 326);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 22;
@@ -261,7 +262,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(45, 346);
+            this.button6.Location = new System.Drawing.Point(27, 326);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 23;
@@ -274,7 +275,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label10.Location = new System.Drawing.Point(21, 395);
+            this.label10.Location = new System.Drawing.Point(16, 361);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(232, 31);
             this.label10.TabIndex = 24;
@@ -289,12 +290,24 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(1, 401);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(313, 25);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "CADASTRO DE FUNCIONARIO";
+            // 
             // CadFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button6);
@@ -319,7 +332,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadFunc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Funcionario";
             this.Load += new System.EventHandler(this.CadFunc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
@@ -359,5 +374,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label11;
     }
 }

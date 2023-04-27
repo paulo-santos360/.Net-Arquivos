@@ -53,6 +53,7 @@
             this.controle_estoqueTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -258,12 +259,24 @@
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(445, 386);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(282, 25);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "ALTERAÇÃO DE ESTOQUE";
+            // 
             // ForAltEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
-            this.ClientSize = new System.Drawing.Size(839, 450);
+            this.ClientSize = new System.Drawing.Size(802, 450);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
@@ -285,7 +298,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ForAltEstoque";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForAltEstoque";
             this.Load += new System.EventHandler(this.ForAltEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).EndInit();
@@ -322,5 +339,6 @@
         private RacaodovaleDataSetTableAdapters.controle_estoqueTableAdapter controle_estoqueTableAdapter;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label10;
     }
 }

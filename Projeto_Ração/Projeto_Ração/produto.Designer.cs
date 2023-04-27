@@ -34,6 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.CADASTRAR = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -45,12 +47,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.racaodovaleDataSet = new Projeto_Ração.RacaodovaleDataSet();
-            this.cadastroprodutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -100,6 +101,16 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 25;
+            // 
+            // cadastroprodutosBindingSource
+            // 
+            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
+            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
+            // 
+            // racaodovaleDataSet
+            // 
+            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
+            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox4
             // 
@@ -198,19 +209,20 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // racaodovaleDataSet
-            // 
-            this.racaodovaleDataSet.DataSetName = "RacaodovaleDataSet";
-            this.racaodovaleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadastroprodutosBindingSource
-            // 
-            this.cadastroprodutosBindingSource.DataMember = "cadastro_produtos";
-            this.cadastroprodutosBindingSource.DataSource = this.racaodovaleDataSet;
-            // 
             // cadastro_produtosTableAdapter
             // 
             this.cadastro_produtosTableAdapter.ClearBeforeFill = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(403, 394);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 25);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "PRODUTOS DA LOJA";
             // 
             // produto
             // 
@@ -218,6 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
@@ -234,12 +247,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "produto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "produto";
             this.Load += new System.EventHandler(this.produto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +281,6 @@
         private RacaodovaleDataSet racaodovaleDataSet;
         private System.Windows.Forms.BindingSource cadastroprodutosBindingSource;
         private RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter cadastro_produtosTableAdapter;
+        private System.Windows.Forms.Label label7;
     }
 }

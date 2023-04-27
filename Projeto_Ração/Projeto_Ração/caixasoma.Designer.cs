@@ -50,6 +50,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
@@ -172,7 +173,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(34, 361);
+            this.button1.Location = new System.Drawing.Point(34, 347);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -182,7 +183,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(146, 361);
+            this.button2.Location = new System.Drawing.Point(146, 347);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -192,7 +193,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(353, 361);
+            this.button3.Location = new System.Drawing.Point(353, 347);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;
@@ -201,7 +202,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(247, 361);
+            this.button4.Location = new System.Drawing.Point(247, 347);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 9;
@@ -226,12 +227,24 @@
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 11;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(74, 411);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 25);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "CAIXA";
+            // 
             // caixasoma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
@@ -244,7 +257,9 @@
             this.Controls.Add(this.Produtos);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "caixasoma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "caixasoma";
             this.Load += new System.EventHandler(this.caixasoma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -278,5 +293,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -44,6 +44,7 @@
             this.contasTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.contasTableAdapter();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.contasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 30);
+            this.label1.Location = new System.Drawing.Point(42, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 0;
@@ -79,7 +80,7 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contasBindingSource, "contas_nm", true));
-            this.textBox1.Location = new System.Drawing.Point(39, 69);
+            this.textBox1.Location = new System.Drawing.Point(39, 84);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
@@ -175,12 +176,24 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(7, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 25);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "CONTAS A PAGAR";
+            // 
             // CONTAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
@@ -193,7 +206,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CONTAS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONTAS";
             this.Load += new System.EventHandler(this.CONTAS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.contasBindingSource)).EndInit();
@@ -221,5 +236,6 @@
         private RacaodovaleDataSetTableAdapters.contasTableAdapter contasTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
     }
 }

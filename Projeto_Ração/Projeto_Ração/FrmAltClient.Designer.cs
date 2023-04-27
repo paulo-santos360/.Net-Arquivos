@@ -49,6 +49,7 @@
             this.cadastro_clienteTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_clienteTableAdapter();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroclienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -205,7 +206,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.Location = new System.Drawing.Point(25, 304);
+            this.label7.Location = new System.Drawing.Point(25, 282);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(232, 31);
             this.label7.TabIndex = 34;
@@ -220,12 +221,24 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(12, 335);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(320, 25);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "ALTERAR DADOS DO CLIENTE";
+            // 
             // FrmAltClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
@@ -243,7 +256,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAltClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltClient";
             this.Load += new System.EventHandler(this.FrmAltClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastroclienteBindingSource)).EndInit();
@@ -276,5 +291,6 @@
         private RacaodovaleDataSetTableAdapters.cadastro_clienteTableAdapter cadastro_clienteTableAdapter;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label8;
     }
 }

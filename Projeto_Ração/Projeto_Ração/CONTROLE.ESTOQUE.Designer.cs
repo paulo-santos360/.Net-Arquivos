@@ -63,6 +63,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -265,7 +266,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label9.Location = new System.Drawing.Point(438, 18);
+            this.label9.Location = new System.Drawing.Point(478, 62);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(232, 31);
             this.label9.TabIndex = 22;
@@ -351,12 +352,24 @@
             // 
             this.cadastro_produtosTableAdapter.ClearBeforeFill = true;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Window;
+            this.label13.Location = new System.Drawing.Point(457, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(271, 25);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "CONTROLE DE ESTOQUE";
+            // 
             // CONTROLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -387,7 +400,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CONTROLE";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONTROLE DE ESTOQUE";
             this.Load += new System.EventHandler(this.CONTROLE_Load);
             ((System.ComponentModel.ISupportInitialize)(this.controleestoqueBindingSource)).EndInit();
@@ -435,5 +450,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.BindingSource cadastroprodutosBindingSource;
         private RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter cadastro_produtosTableAdapter;
+        private System.Windows.Forms.Label label13;
     }
 }

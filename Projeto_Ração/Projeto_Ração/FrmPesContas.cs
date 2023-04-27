@@ -60,5 +60,22 @@ namespace Projeto_Ração
             this.contasTableAdapter.Fill(this.racaodovaleDataSet.contas);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            contasBindingSource.Filter = string.Format("contas_CD={0}", textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+            {
+                contasBindingSource.Filter = "";
+            }
+            else
+            {
+                contasBindingSource.Filter = string.Format("contas_barra like'%{0}%'", textBox2.Text);
+            }
+        }
     }
 }

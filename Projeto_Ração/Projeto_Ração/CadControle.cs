@@ -72,5 +72,10 @@ namespace Projeto_Ração
             this.Hide();
             colabh.ShowDialog();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,6 +53,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -277,7 +278,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(111, 426);
+            this.button7.Location = new System.Drawing.Point(111, 442);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 7;
@@ -287,7 +288,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(308, 426);
+            this.button8.Location = new System.Drawing.Point(323, 442);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 8;
@@ -297,13 +298,24 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(209, 426);
+            this.button9.Location = new System.Drawing.Point(209, 442);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 9;
             this.button9.Text = "Limpar";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(160, 399);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(223, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "BACKUP E RESTOTE";
             // 
             // frmBackupRest
             // 
@@ -312,6 +324,7 @@
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(537, 477);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -319,7 +332,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBackupRest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQL Server - Backup e Restore";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -331,6 +346,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -361,6 +377,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label4;
     }
 }
 

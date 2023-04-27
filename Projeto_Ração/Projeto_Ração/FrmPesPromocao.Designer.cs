@@ -49,6 +49,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.promocao_produtoTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.promocao_produtoTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.promocaoprodutoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
@@ -224,12 +225,24 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "RAÇÃODOVALE";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(258, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(295, 25);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "PROMOÇÃO DE PRODUTOS";
+            // 
             // FrmPesPromocao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
@@ -242,7 +255,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPesPromocao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPesPromocao";
             this.Load += new System.EventHandler(this.FrmPesPromocao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -275,5 +290,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prodtpromocaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtoscdDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

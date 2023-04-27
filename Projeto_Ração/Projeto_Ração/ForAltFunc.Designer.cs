@@ -55,6 +55,7 @@
             this.cad_funcionarioTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -277,12 +278,24 @@
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(155, 305);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(374, 25);
+            this.label11.TabIndex = 48;
+            this.label11.Text = "ALTERAR DADOS DE FUNCIONARIO";
+            // 
             // ForAltFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button6);
@@ -306,7 +319,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ForAltFunc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForAltFunc";
             this.Load += new System.EventHandler(this.ForAltFunc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadfuncionarioBindingSource)).EndInit();
@@ -345,5 +360,6 @@
         private RacaodovaleDataSetTableAdapters.cad_funcionarioTableAdapter cad_funcionarioTableAdapter;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label11;
     }
 }

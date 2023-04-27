@@ -64,5 +64,10 @@ namespace Projeto_Ração
             else//
             { cadastroprodutosBindingSource.Filter = string.Format("produtos_cd={0}", Class1.codigo); }// textBox1.Text); }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

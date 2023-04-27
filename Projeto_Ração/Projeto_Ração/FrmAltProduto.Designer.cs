@@ -47,6 +47,7 @@
             this.cadastro_produtosTableAdapter = new Projeto_Ração.RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racaodovaleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +86,7 @@
             // textBox5
             // 
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroprodutosBindingSource, "produtos_valor_venda", true));
-            this.textBox5.Location = new System.Drawing.Point(154, 170);
+            this.textBox5.Location = new System.Drawing.Point(154, 161);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 41;
@@ -103,7 +104,7 @@
             // textBox4
             // 
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroprodutosBindingSource, "produtos_valor_compra", true));
-            this.textBox4.Location = new System.Drawing.Point(12, 170);
+            this.textBox4.Location = new System.Drawing.Point(12, 161);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 40;
@@ -111,7 +112,7 @@
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cadastroprodutosBindingSource, "produtos_tamanho", true));
-            this.textBox3.Location = new System.Drawing.Point(12, 257);
+            this.textBox3.Location = new System.Drawing.Point(12, 242);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 39;
@@ -153,7 +154,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 226);
+            this.label3.Location = new System.Drawing.Point(14, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 34;
@@ -171,7 +172,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 29);
+            this.label1.Location = new System.Drawing.Point(13, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 32;
@@ -186,7 +187,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label6.Location = new System.Drawing.Point(22, 306);
+            this.label6.Location = new System.Drawing.Point(22, 319);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(232, 31);
             this.label6.TabIndex = 46;
@@ -201,12 +202,25 @@
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Location = new System.Drawing.Point(12, 280);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(233, 25);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "ALTERAR PRODUTOS";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // FrmAltProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
@@ -222,7 +236,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAltProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAltProduto";
             this.Load += new System.EventHandler(this.FrmAltProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cadastroprodutosBindingSource)).EndInit();
@@ -253,5 +270,6 @@
         private RacaodovaleDataSetTableAdapters.cadastro_produtosTableAdapter cadastro_produtosTableAdapter;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
