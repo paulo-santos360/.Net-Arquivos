@@ -33,10 +33,6 @@ Se você deseja contribuir para algum dos projetos ou compartilhar seus conhecim
 
 Vou adorar receber contribuições e aprender com você!
 
-## Suporte e Contato 📧📞
-
-Se você tiver alguma pergunta, sugestão ou apenas quiser trocar ideias, fique à vontade para entrar em contato comigo aqui no GitHub ou em [seu-email@example.com].
-
 ## Licença 📄
 
 Este repositório é licenciado sob a Licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
