@@ -13,9 +13,14 @@ Este repositório é dedicado aos meus esforços de aprendizado em .NET, onde es
 - **Visual Studio** 🛠️: Minha IDE preferida para desenvolvimento .NET.
 - **SQL Server** 📊: Sistema de gerenciamento de banco de dados relacional da Microsoft.
 
-## Projetos Destacados 🚀🌟
+## Funcionalidades Principais 📋🔍
 
-- **[Estudos 1]**: Descrição breve do primeiro projeto.
+- **Autenticação de Usuário**: Login seguro para funcionários.
+- **Gerenciamento de Funcionários**: CRUD (Cadastro, Leitura, Atualização, Exclusão) de funcionários.
+- **Gerenciamento de Fornecedores**: Cadastro e informações de fornecedores.
+- **Gerenciamento de Produtos**: Cadastro, edição e remoção de produtos.
+- **Controle de Estoque**: Acompanhamento do estoque de produtos.
+- **Relatórios**: Geração de relatórios para análise de vendas e estoque.
 
 ## Como Contribuir 🤝👏
 
